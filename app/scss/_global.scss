@@ -56,11 +56,16 @@ body {
   justify-content: center;
   margin-bottom: 78px;
 
-  &-item:not(:last-child) {
+  &-item:not(:last-child),
+  &-item__link:not(:last-child) {
     margin-right: 30px;
   }
 
+  &-item__link,
   &-link {
+    border: none;
+    background-color: transparent;
+    outline: transparent;
     @extend %DMSans-700;
     color: #8b8b8b;
 
@@ -68,4 +73,5 @@ body {
       color: #1a1a1a;
     }
   }
+
 }

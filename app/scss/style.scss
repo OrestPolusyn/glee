@@ -21,6 +21,12 @@
 }
 
 .menu {
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  max-width: 490px;
+
   &__list {
     display: flex;
     justify-content: space-between;
@@ -268,7 +274,7 @@
 
   }
 
-  
+
 
 
   &-icon {
