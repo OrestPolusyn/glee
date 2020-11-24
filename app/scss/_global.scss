@@ -7,7 +7,7 @@ body {
     font-size: 16px;
     display: flex;
     flex-direction: column;
-    @extend %DM_Sans-400;
+    @extend %DMSans-400;
     color: $default;
 }
 

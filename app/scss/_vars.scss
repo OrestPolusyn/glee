@@ -1,19 +1,15 @@
 $default: #436372;
 $gray :#7b7b7b;
 $white:#fff;
-%DM_Sans-400 {
-    font-family: 'DM Sans', sans-serif;
+$priority:#a3bbc8;
+%DMSans-400 {
+    font-family: 'DMSans-Regular', sans-serif;
     font-weight: 400;
 }
 
 %DMSans-700 {
     font-family: 'DMSans-Bold', sans-serif;
     font-weight: 700;
-}
-
-%MyriadPro-400 {
-    font-family: 'MyriadPro-Regular', sans-serif;
-    font-weight: 400;
 }
 
 %Rubik-400 {

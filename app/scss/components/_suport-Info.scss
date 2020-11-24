@@ -1,0 +1,52 @@
+.support__info {
+  background-color: #fef7f0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+
+  &-item {
+    max-width: 570px;
+    width: 100%;
+    padding: 35px 0 35px 220px;
+    position: relative;
+
+    &:not(:last-child) {
+      border-right: 1px solid #e8e4df;
+    }
+
+    &::before {
+      content: "";
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      transform: translate(-163%, 10px);
+    }
+
+    &--hours::before {
+      background-image: url('/images/icons/24_hours.png');
+    }
+
+    &--delivery::before {
+      background-image: url('/images/icons/delivery_truck.png');
+    }
+
+    &--card::before {
+      background-image: url('/images/icons/credit_card.png');
+    }
+  }
+
+  &-title {
+    @extend %DMSans-700;
+    font-size: 18px;
+    color: #414141;
+    line-height: 2.222;
+  }
+
+  &-text {
+    color: #585858;
+    line-height: 1.875;
+    width: 214px;
+  }
+}
