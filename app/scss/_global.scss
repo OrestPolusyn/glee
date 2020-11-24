@@ -68,10 +68,9 @@ body {
     outline: transparent;
     @extend %DMSans-700;
     color: #8b8b8b;
-
-    &--active {
-      color: #1a1a1a;
-    }
   }
+}
 
+.mixitup-control-active {
+  color: #1a1a1a;
 }
