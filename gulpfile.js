@@ -41,7 +41,8 @@ function styles() {
 
 function scripts() {
   return src([
-      'node_modules/jquery/dist/jquery.js',
+      'node_modules/jquery/dist/jquery.min.js',
+      'node_modules/slick-carousel/slick/slick.js',
       'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))
@@ -78,11 +79,13 @@ function images() {
 
 function build() {
   return src([
-    'app/**/*.html',
-    'app/css/style.min.css',
-    'app/js/main.min.js'
-  ], {base:'app'})
-  .pipe(dest('dist'))
+      'app/**/*.html',
+      'app/css/style.min.css',
+      'app/js/main.min.js'
+    ], {
+      base: 'app'
+    })
+    .pipe(dest('dist'))
 }
 
 
