@@ -1,5 +1,6 @@
 .show__product {
   display: flex;
+  margin-bottom: 100px;
 
   &-item {
     background-color: #feefe2;
@@ -51,5 +52,8 @@
     @extend %Rubik-400;
     border-radius: 4px;
 
+    .icon {
+      margin-left: 36px;
+    }
   }
 }
