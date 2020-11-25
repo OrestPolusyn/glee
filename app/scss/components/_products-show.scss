@@ -1,59 +1,53 @@
 .show__product {
-  display: flex;
-  margin-bottom: 100px;
-
-  &-item {
-    background-color: #feefe2;
-    max-width: 870px;
-    width: 100%;
     display: flex;
-    align-items: center;
-    padding-left: 140px;
-    padding-bottom: 80px;
-
-    &:first-child {
-      margin-right: 30px;
+    margin-bottom: 100px;
+    &-item {
+        background-color: #feefe2;
+        max-width: 870px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 140px;
+        padding-bottom: 80px;
+        &:first-child {
+            margin-right: 30px;
+        }
     }
-  }
-
-  &-img {
-    margin-top: -96px;
-  }
+    &-img {
+        margin-top: -96px;
+    }
 }
 
 .product__descr {
-  max-width: 350px;
-  width: 100%;
-  margin-left: 60px;
-  padding-top: 55px;
-
-  &-title {
-    font-size: 26px;
-    @extend %DMSans-700;
-    color: $text-color;
-    line-height: 1.231;
-    text-align: left;
-    margin-bottom: 24px;
-  }
-
-  &-text {
-    font-size: 16px;
-    @extend %Rubik-400;
-    color: $text-color;
-    line-height: 1.875;
-    margin-bottom: 30px;
-  }
-
-  &-btn {
-    display: inline-block;
-    padding: 20px;
-    border: 1px solid #b3b7b5;
-    color: $default;
-    @extend %Rubik-400;
-    border-radius: 4px;
-
-    .icon {
-      margin-left: 36px;
+    max-width: 350px;
+    width: 100%;
+    margin-left: 60px;
+    padding-top: 55px;
+    &-title {
+        font-size: 26px;
+        @extend %DMSans-700;
+        color: $text-color;
+        line-height: 1.231;
+        text-align: left;
+        margin-bottom: 24px;
     }
-  }
+    &-text {
+        font-size: 16px;
+        @extend %Rubik-400;
+        color: $text-color;
+        line-height: 1.875;
+        margin-bottom: 30px;
+    }
+    &-btn {
+        display: inline-block;
+        padding: 20px;
+        border: 1px solid #b3b7b5;
+        color: $default;
+        @extend %Rubik-400;
+        border-radius: 4px;
+        .icon {
+            margin-left: 36px;
+            fill: #436372;
+        }
+    }
 }
