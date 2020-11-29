@@ -9,6 +9,11 @@ $text-color: #243f4d;
   font-weight: 400;
 }
 
+%DMSans-600 {
+  font-family: 'DMSans-Medium', sans-serif;
+  font-weight: 600;
+}
+
 %DMSans-700 {
   font-family: 'DMSans-Bold', sans-serif;
   font-weight: 700;
@@ -26,8 +31,9 @@ $text-color: #243f4d;
 
 
 @function max($numbers...) {
-   @return m#{a}x(#{$numbers});
+  @return m#{a}x(#{$numbers});
 }
+
 @function min($numbers...) {
-   @return m#{i}x(#{$numbers});
+  @return m#{i}x(#{$numbers});
 }

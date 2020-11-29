@@ -1,12 +1,14 @@
-.design__products {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 34px 30px;
-  margin-bottom: 120px;
+.design {
+  &__products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 34px 30px;
+    margin-bottom: 120px;
+  }
 }
 
-.design__product {
+.design-card {
   min-height: 246px;
   max-width: 370px;
   width: 100%;
@@ -14,8 +16,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: 38px;
+  background-color: #f8f8f8;
+  overflow: hidden;
+  position: relative;
 
-  &-title {
+  &__title {
     @extend %DMSans-700;
     font-size: 20px;
     color: #1a1a1a;
@@ -25,11 +30,21 @@
     margin-bottom: 10px;
   }
 
-  &-subtitle {
+  &__subtitle {
     font-size: 16px;
     color: #a3bbc8;
     font-weight: bold;
     line-height: 1.2;
     text-align: left;
+  }
+
+  &__img {
+    position: absolute;
+    left: 100px;
+    bottom: 36px;
+    &--chair{
+         left: auto;
+         right: 35px;
+    }
   }
 }

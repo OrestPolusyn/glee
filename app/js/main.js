@@ -1,6 +1,6 @@
 $(function() {
 
-    $('.slider').slick({
+    $('.slider-top').slick({
         dots: true,
         arrows: false,
         fade: true,
@@ -8,18 +8,18 @@ $(function() {
         autoplaySpeed: 2000
     });
 
-    var mixerDesign = mixitup('.design__products', {
+    var mixerDesign = mixitup('.product__items', {
         selectors: {
-            control: '.design .list__nav-item__link'
+            control: '.product__nav .filter__item'
         },
         animation: {
             duration: 300
         }
     });
 
-    var mixerProducts = mixitup('.product__items', {
+    var mixerProducts = mixitup('.design__products', {
         selectors: {
-            control: '.product .list__nav-item__link'
+            control: '.design__nav .filter__item'
         },
         animation: {
             duration: 300
