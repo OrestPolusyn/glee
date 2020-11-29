@@ -1,0 +1,32 @@
+.team {
+  display: flex;
+  margin-bottom: 120px;
+
+  &__content {
+    max-width: 300px;
+    margin-right: 50px;
+  }
+
+  &__content-title {
+    font-size: 36px;
+    @extend %DMSans-600;
+    color: $text-color;
+    margin-bottom: 30px;
+  }
+
+  &__content-text {
+    font-size: 16px;
+    @extend %Rubik-400;
+    color: $text-color;
+    line-height: 1.875;
+
+  }
+
+
+  &__members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 40px 30px;
+  }
+}

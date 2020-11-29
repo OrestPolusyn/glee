@@ -1,0 +1,44 @@
+.numbers-about {
+  background-color: #fcd7b6;
+  padding: 82px 0;
+  margin-bottom: 120px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__item {
+    text-align: center;
+    @extend %DMSans-600;
+    color: $text-color;
+  }
+
+  &__item-img {
+    margin: 0 auto;
+    margin-bottom: 26px;
+    position: relative;
+
+    &::before {
+      content: "";
+      border-radius: 50%;
+      background-color: #a3bbc8;
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  &__item-number {
+    font-size: 36px;
+  }
+
+  &__item-name {
+    font-size: 18px;
+
+  }
+
+}

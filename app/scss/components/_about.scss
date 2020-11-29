@@ -1,0 +1,114 @@
+.experience {
+  display: flex;
+  margin-bottom: 120px;
+
+  &__img {
+    margin-right: 50px;
+  }
+}
+
+.experience-content {
+  padding: 86px 0;
+
+  &__year {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 50px;
+  }
+
+  &__year-num {
+    font-size: 140px;
+    @extend %Rubik-800;
+    color: $priority;
+    line-height: 1;
+    margin-right: 30px;
+  }
+
+  &__year-descr {
+    padding-bottom: 12px;
+  }
+
+  &__year-text {
+    display: block;
+    font-size: 16px;
+    @extend %Rubik-400;
+    color: $text-color;
+    line-height: 1.875;
+    text-align: left;
+  }
+
+  &__title {
+    font-size: 36px;
+    @extend %DMSans-700;
+    color: $text-color;
+    line-height: 1.2;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    font-size: 16px;
+    @extend %Rubik-400;
+    color: $text-color;
+    line-height: 1.875;
+    padding-bottom: 68px;
+    border-bottom: 1px solid #e6eaf0;
+    margin-bottom: 40px;
+  }
+
+  &__numbers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__numbers-item {
+    max-width: 170px;
+    padding: 12px 40px 12px 60px;
+    @extend %DMSans-700;
+    position: relative;
+    border-right: 1px solid #e6eaf0;
+
+    &:last-child {
+      border-right: none
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      left: 0;
+      top: 26px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--contract::before {
+      background-image: url('../../images/about/icons/contarct.png');
+    }
+
+    &--speaker::before {
+      background-image: url('../../images/about/icons/speaker.png');
+      width: 44px;
+    }
+
+    &--medal::before {
+      background-image: url('../../images/about/icons/medal.png');
+    }
+  }
+
+  &__numbers-number {
+    font-size: 36px;
+    color: $text-color;
+  }
+
+  &__numbers-name {
+    font-size: 16px;
+    color: #4c4c4c;
+
+  }
+
+
+
+}
