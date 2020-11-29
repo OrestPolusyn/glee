@@ -1,17 +1,17 @@
 .team {
   display: flex;
-  margin-bottom: 120px;
+  margin-bottom: 54px;
 
   &__content {
     max-width: 300px;
-    margin-right: 50px;
+    margin-right: 100px;
   }
 
   &__content-title {
     font-size: 36px;
     @extend %DMSans-600;
     color: $text-color;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
   }
 
   &__content-text {
@@ -19,14 +19,86 @@
     @extend %Rubik-400;
     color: $text-color;
     line-height: 1.875;
-
+    margin-bottom: 50px;
   }
-
 
   &__members {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 40px 30px;
+    grid-gap: 0 30px;
+  }
+
+  &__content-btn {
+    border-radius: 5px;
+    background-color: #a3bbc8;
+    color: #fff;
+    padding: 14px 22px;
+    font-size: 15px;
+    font-weight: bold;
+
+
+
+    svg {
+      margin-left: 16px;
+      padding-top: 8px;
+    }
+  }
+}
+
+.team-member {
+  box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+  background-color: #f8f8f8;
+
+  &__about {
+    background-color: #fff;
+    max-width: 326px;
+    padding: 25px 24px;
+    transform: translateY(-50px);
+    position: relative;
+  }
+
+  &__name {
+    font-size: 22px;
+    @extend %DMSans-600;
+    color: #436372;
+    margin-bottom: 10px;
+  }
+
+  &__position {
+    font-size: 16px;
+    @extend %Rubik-400;
+    color: rgb(86, 88, 114);
+  }
+
+  &:nth-child(3),
+  &:nth-child(4) {
+    margin-top: -10px;
+  }
+
+  &__socials {
+    display: flex;
+    position: absolute;
+    right: 24px;
+    bottom: 32px;
+  }
+
+  &__item {
+    border-radius: 50%;
+    background-color: rgb(246, 246, 246);
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    &:first-child {
+      margin-right: 7px;
+    }
+
+    svg {
+      fill: #8b8b8b;
+      height: 24px;
+      width: 24px;
+      transform: translate(50%, 50%);
+    }
   }
 }
