@@ -1,0 +1,29 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    padding: 14px 22px;
+    border: 1px solid $priority;
+    color: $text-color;
+    @extend %Rubik-400;
+    font-size: 16px;
+
+    &--active {
+      background-color: $priority;
+      color: #fff;
+
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}

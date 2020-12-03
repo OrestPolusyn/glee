@@ -1,0 +1,240 @@
+.shop-inner {
+  display: flex;
+  justify-content: space-between;
+
+  &__filters {
+    width: 270px;
+    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.filter-category,
+.filter-brand {
+  background-color: transparent;
+  width: 100%;
+  margin-bottom: 60px;
+
+  &__title {
+    font-size: 18px;
+    @extend %DMSans-700;
+    color: $text-color;
+    position: relative;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+
+
+    &::before {
+      content: "";
+      background-color: rgb(163, 187, 200);
+      position: absolute;
+      width: 40px;
+      height: 4px;
+      top: 50%;
+      bottom: auto;
+      transform: translateY(-50%);
+      right: 112px;
+    }
+  }
+
+  &__input {
+    @extend %checkbox-hidden;
+
+    &:checked+.filter-category__item {
+      background-color: #edf1f4;
+    }
+  }
+
+  &__label {
+    display: flex;
+  }
+
+  &__item {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    align-items: center;
+    background-color: transparent;
+    font-size: 16px;
+    @extend %Rubik-400;
+    color: $text-color;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      background-image: url('../images/icons/shop_arrow.svg');
+      height: 10px;
+      width: 5px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      fill: #000;
+      right: 22px;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+    }
+  }
+}
+
+.filter-brand {
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &::after {
+      background-image: none;
+    }
+  }
+
+  &__input {
+    @extend %checkbox-hidden;
+
+    &:checked+.filter-brand__item {
+      background-color: #edf1f4;
+
+      .filter-brand__num {
+        color: $text-color;
+      }
+    }
+  }
+
+  &__num {
+    color: #b3b3b3;
+  }
+}
+
+.filter-price {
+  background-color: transparent;
+  width: 100%;
+  margin-bottom: 60px;
+
+  &__numbers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 18px;
+    @extend %DMSans-700;
+    color: $text-color;
+    position: relative;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+
+    &::before {
+      content: "";
+      background-color: rgb(163, 187, 200);
+      position: absolute;
+      width: 40px;
+      height: 4px;
+      top: 50%;
+      bottom: auto;
+      transform: translateY(-50%);
+      right: 112px;
+    }
+  }
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single,
+.irs-with-grid .irs-grid,
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+  display: none;
+}
+
+.irs--flat .irs-line {
+  top: 12px;
+  height: 2px;
+  background-color: #c2d2db;
+  border-radius: 0;
+}
+
+.irs--flat .irs-bar {
+  top: 11px;
+  height: 4px;
+  background-color: #a3bbc8;
+}
+
+.irs--flat .irs-handle {
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: #a3bbc8;
+}
+
+.irs--flat .irs-handle>i:first-child,
+.irs--flat .irs-handle.state_hover>i:first-child,
+.irs--flat .irs-handle:hover>i:first-child {
+  background-color: #a3bbc8;
+}
+
+.filter-recent {
+  background-color: transparent;
+  width: 100%;
+  margin-bottom: 60px;
+
+  &__title {
+    font-size: 18px;
+    @extend %DMSans-700;
+    color: $text-color;
+    position: relative;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+
+    &::before {
+      content: "";
+      background-color: rgb(163, 187, 200);
+      position: absolute;
+      width: 40px;
+      height: 4px;
+      top: 50%;
+      bottom: auto;
+      transform: translateY(-50%);
+      right: 112px;
+    }
+  }
+}
+
+.filter-recent {
+  &__item {
+    display: flex;
+    margin-bottom: 22px;
+  }
+
+  &__img {
+    height: 70px;
+    width: 70px;
+    padding: 5px;
+    border: 1px solid #f2f2f2;
+    margin-right: 20px;
+    object-fit: contain;
+  }
+
+  &__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__text,
+  &__price {
+    font-size: 14px;
+    @extend %Rubik-400;
+    color: #333333;
+
+  }
+}
+
+.shop-inner {
+  &__content {
+    width: 100%;
+  }
+}

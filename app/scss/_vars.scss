@@ -43,3 +43,11 @@ $top-bg:#edf1f4;
 @function min($numbers...) {
   @return m#{i}x(#{$numbers});
 }
+
+%checkbox-hidden{
+  width: 0;
+  height: 0;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
