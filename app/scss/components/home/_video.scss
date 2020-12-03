@@ -5,12 +5,24 @@
     align-items: center;
     margin-bottom: 110px;
     position: relative;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    transition: opacity 0.8s;
+    background-repeat: no-repeat;
+
+    &:hover {
+        opacity: 0.6;
+        transition: opacity 0.8s;
+    }
+
     &__play {
         position: absolute;
         top: 0;
         bottom: 0;
         right: 0;
         left: 0;
+
         &::before {
             content: "";
             height: 126px;
@@ -26,6 +38,7 @@
             display: flex;
             transform: translate(8px, -50%);
         }
+
         &::after {
             content: "";
             height: 98px;
@@ -42,6 +55,7 @@
             transform: translate(8px, -50%);
         }
     }
+
     &__play-icon {
         width: 25px;
         height: 25px;

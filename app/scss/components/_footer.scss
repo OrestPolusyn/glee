@@ -5,13 +5,16 @@
         padding: 78px 0 54px;
         border-bottom: 1px solid #dae4e9;
     }
+
     &__logo {
         display: block;
         margin-bottom: 25px;
     }
+
     &__address {
         max-width: 200px;
     }
+
     &__link {
         display: block;
         font-size: 14px;
@@ -20,10 +23,12 @@
         font-style: normal;
         margin-bottom: 10px;
         line-height: 1.7;
+
         span {
             text-transform: uppercase;
         }
     }
+
     &__title {
         font-size: 16px;
         color: #1f2044;
@@ -31,43 +36,56 @@
         text-transform: uppercase;
         margin-bottom: 18px;
     }
+
     &__text {
         padding-right: 36px;
         font-size: 14px;
         line-height: 1.714;
         margin-bottom: 30px;
     }
+
     &__box {
         padding-top: 16px;
+
         &:first-child {
             max-width: 200px;
             margin-right: 96px;
             padding-top: 0;
         }
+
         &:nth-child(2),
         &:nth-child(3) {
             margin-right: auto;
         }
     }
+
     &__form {
         display: flex;
         align-items: flex-end;
         margin-left: 6px;
+        position: relative;
+
         label {
             font-size: 0;
             color: transparent;
         }
     }
+
     &__input {
-        padding: 12px 16px;
+        padding: 12px 110px 12px 16px;
         border: none;
-        width: 170px;
         background-color: #fef7f0;
         font-size: 12px;
         color: #234969;
         line-height: 1.2;
+        width: 264px;
         outline: transparent;
+
+        &:focus {
+            outline: 2px solid $text-color;
+        }
     }
+
     &__btn {
         border: none;
         background-color: #a3bbc8;
@@ -75,14 +93,18 @@
         color: #fff;
         line-height: 1.5;
         height: 38px;
+        position: absolute;
         width: 100px;
-        cursor: pointer;
+        right: 0;
+        cursor: pointer
     }
+
     &__bottom {
         display: flex;
         justify-content: space-between;
         padding: 30px 0 40px;
     }
+
     &__copyright {
         font-size: 14px;
         @extend %Rubik-400;
@@ -102,10 +124,12 @@
     &__list {
         display: flex;
     }
+
     &__item {
         &:not(:last-child) {
             margin-right: 30px;
             position: relative;
+
             &::before {
                 content: "";
                 position: absolute;
@@ -117,6 +141,7 @@
             }
         }
     }
+
     &__link {
         font-size: 14px;
         @extend %Rubik-400;
