@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 78px;
+
     &__item,
     &__link {
         border: none;
@@ -10,11 +11,13 @@
         @extend %DMSans-700;
         color: #8b8b8b;
         cursor: pointer;
+
         &:not(:last-child),
         &:not(:last-child) {
             margin-right: 30px;
         }
     }
+
     .mixitup-control-active {
         color: #1a1a1a;
     }
