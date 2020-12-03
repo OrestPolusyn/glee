@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-size: 570px, contain;
     background-position: center left;
+
     &__img {
         margin-right: 50px;
     }
@@ -13,11 +14,13 @@
     padding: 66px 0;
     max-width: 550px;
     margin-left: auto;
+
     &__year {
         display: flex;
         align-items: flex-end;
         margin-bottom: 22px;
     }
+
     &__num {
         font-size: 140px;
         @extend %Rubik-800;
@@ -25,9 +28,11 @@
         line-height: 1;
         margin-right: 30px;
     }
+
     &__descr {
         padding-bottom: 12px;
     }
+
     &__span {
         display: block;
         font-size: 16px;
@@ -36,6 +41,7 @@
         line-height: 1.875;
         text-align: left;
     }
+
     &__title {
         font-size: 36px;
         @extend %DMSans-700;
@@ -43,6 +49,7 @@
         line-height: 1.2;
         margin-bottom: 35px;
     }
+
     &__text {
         font-size: 16px;
         @extend %Rubik-400;
@@ -51,6 +58,7 @@
         padding-bottom: 58px;
         margin-bottom: 32px;
         position: relative;
+
         &::before {
             content: "";
             position: absolute;
@@ -60,20 +68,24 @@
             bottom: 0;
         }
     }
+
     &__numbers {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     &__item {
         max-width: 170px;
         padding: 0 40px 12px 60px;
         @extend %DMSans-700;
         position: relative;
         border-right: 1px solid #e6eaf0;
+
         &:last-child {
             border-right: none
         }
+
         &::before {
             content: "";
             position: absolute;
@@ -85,21 +97,26 @@
             background-size: cover;
             background-position: center;
         }
+
         &--contract::before {
             background-image: url('../../images/about/icons/contarct.png');
         }
+
         &--speaker::before {
             background-image: url('../../images/about/icons/speaker.png');
             width: 44px;
         }
+
         &--medal::before {
             background-image: url('../../images/about/icons/medal.png');
         }
     }
+
     &__number {
         font-size: 36px;
         color: $text-color;
     }
+
     &__name {
         font-size: 16px;
         color: #4c4c4c;

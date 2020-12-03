@@ -4,6 +4,7 @@
     padding: 28px 0;
     @extend %Rubik-400;
     margin-bottom: 122px;
+
     &__title {
         font-size: 36px;
         color: #222933;
@@ -16,8 +17,10 @@
         display: flex;
         justify-content: center;
     }
+
     &__item {
         position: relative;
+
         &::before {
             content: "/";
             position: absolute;
@@ -26,18 +29,22 @@
             line-height: 1.714;
             left: -12px;
         }
+
         &:first-child {
             &::before {
                 content: "";
             }
         }
     }
+
     &__item {
         cursor: pointer;
+
         &:not(:last-child) {
             margin-right: 20px;
         }
     }
+
     &__link {
         font-size: 14px;
         color: rgba(#232a34, 0.6);
