@@ -1,29 +1,24 @@
 .blog {
     position: relative;
     background: linear-gradient(180deg, #fff 339px, #fef7f0 0%);
-
     &__link {
         font-size: 16px;
         @extend %DMSans-700;
         color: #262626;
         line-height: 1.2;
     }
-
-    &__link-icon {
+    &__icon {
         fill: #262626;
         width: 7px;
         height: 12px;
         margin-left: 14px;
     }
-
-
     &__top {
         display: flex;
         justify-content: space-between;
         margin-bottom: 20px;
         align-items: center;
     }
-
     &__items {
         display: flex;
         justify-content: space-between;
@@ -36,15 +31,7 @@
     width: 100%;
     background-color: #fff;
     min-height: 420px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-
-
     &__text {
-        padding-top: 30px;
-        margin: 0px 30px;
         @extend %DMSans-600;
         padding-right: 10px;
         font-size: 18px;
@@ -52,57 +39,56 @@
         letter-spacing: 0.02em;
         line-height: 1.2;
         position: relative;
-
-        &::before {
-            content: "news";
-            position: absolute;
-            height: 30px;
-            width: 102px;
-            color: #fff;
-            background-color: #a3bbc8;
-            border-radius: 15px;
-            text-transform: uppercase;
-            @extend %DMSans-700;
-            font-size: 14px;
-            line-height: 1.5;
-            text-align: center;
-            top: -20px;
-            left: 0;
-            padding-top: 4px;
-        }
-
-
     }
-
-    &:last-child {
-        .blog-item__text {
-            padding-top: 0;
-
-            &::before {
-                top: -50px;
-            }
-        }
+    &__title {
+        @extend %DMSans-600;
+        padding: 33px 30px 0px;
+        font-size: 18px;
+        color: #262626;
+        line-height: 1.2;
+        min-height: 98px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -moz-box;
+        -moz-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        line-clamp: 3;
+        box-orient: vertical;
     }
-
-    &__date {
+    &__inner {
+        position: relative;
+    }
+    &__label {
+        position: absolute;
+        height: 30px;
+        width: 103px;
+        color: #fff;
+        background-color: #a3bbc8;
+        border-radius: 15px;
+        text-transform: uppercase;
+        @extend %DMSans-700;
+        font-size: 14px;
+        line-height: 1.5;
+        text-transform: uppercase;
+        text-align: center;
+        bottom: -13px;
+        left: 28px;
+        padding-top: 4px;
+    }
+    &__bottom {
         display: flex;
-        margin: 8px 27px;
-        padding: 10px 0;
+        margin: 12px 27px;
+        padding: 16px 0;
         border-top: 1px solid #e0e0e0;
     }
-
-    &__date-text {
+    &__text {
         font-size: 12px;
         color: rgb(34, 41, 51);
-        line-height: 2.5;
-        margin-left: 16px;
-
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
     }
-
     &__icon {
         margin-bottom: -4px;
+        margin-right: 4px;
     }
 }

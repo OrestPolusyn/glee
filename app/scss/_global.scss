@@ -1,40 +1,54 @@
-html,
-body {
-  height: 100%;
-}
-
-body {
-  font-size: 16px;
-  display: flex;
-  flex-direction: column;
-  @extend %DMSans-400;
-  color: $default;
-  background-color: #fff;
-}
-
-.main {
-  flex-grow: 1;
-}
-
-.container,
-.wrapper {
-  max-width: 1800px;
-  margin: 0 auto;
-  padding: 0 15px;
-  width: 100%;
-}
-
-.wrapper {
-  max-width: 1200px;
-}
-
-
-.title {
-  @extend %DMSans-700;
-  text-align: center;
-  font-size: 36px;
-  color: #191919;
-  line-height: 1.2;
-  margin-bottom: 26px;
-}
-
+    html,
+    body {
+        height: 100%;
+    }
+    
+    body {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        @extend %DMSans-400;
+        color: $default;
+        background-color: #fff;
+        line-height: 1;
+    }
+    
+    .main {
+        flex-grow: 1;
+    }
+    
+    .container {
+        max-width: 1800px;
+        margin: 0 auto;
+        padding: 0 15px;
+        width: 100%;
+    }
+    
+    .wrapper {
+        @extend .container;
+        max-width: 1200px;
+    }
+    
+    .title {
+        @extend %DMSans-700;
+        text-align: center;
+        font-size: 36px;
+        color: #191919;
+        line-height: 1.2;
+        margin-bottom: 26px;
+    }
+    
+    button,
+    a,
+    input {
+        outline: transparent;
+    }
+    
+    img {
+        object-fit: contain;
+    }
+    
+    .icon {
+        width: 20px;
+        height: 18px;
+    }
