@@ -1,134 +1,18 @@
 <div class="shop-inner__filters filter">
 
-    <div class="filter-category ">
-        <span class="filter__title">CATEGORY</span>
-        <form class="filter-category__form" action="#">
+    <!-- start filter-category section -->
+    @@include('filter/filter-category.html')
+    <!-- end filter-category section -->
 
-            <label class="filter-category__label filter-category__label--active">
-                                    <input class="filter-category__input" type="checkbox">
-                                    <span class="filter-category__item">Chair</span>
-                                </label>
+    <!-- start filter-price section -->
+    @@include('filter/filter-price.html')
+    <!-- end filter-price section -->
 
-            <label class="filter-category__label">
-                                    <input class="filter-category__input" type="checkbox">
-                                    <span class="filter-category__item">Table</span>
-                                </label>
+    <!-- start filter-brand section -->
+    @@include('filter/filter-brand.html')
+    <!-- end filter-brand section -->
 
-            <label class="filter-category__label">
-                                    <input class="filter-category__input" type="checkbox">
-                                    <span class="filter-category__item">Lamp</span>
-                                </label>
-
-            <label class="filter-category__label">
-                                    <input class="filter-category__input" type="checkbox">
-                                    <span class="filter-category__item">Watch</span>
-                                </label>
-
-            <label class="filter-category__label">
-                                    <input class="filter-category__input" type="checkbox">
-                                    <span class="filter-category__item">Clock</span>
-                                </label>
-
-        </form>
-    </div>
-
-    <div class="filter-price">
-        <span class="filter__title">
-            Price
-        </span>
-        <form class="filter-price__form" action="#">
-            <input class="filter-price__input" type="text" data-type="double" data-min="0" data-max="800" data-from="100" data-to="500">
-            <label class="filter-price__label">
-                                    <div class="filter-price__numbers">
-                                        <div>
-                                            $<span class="filter-price__from"></span>
-    </div>
-
-    <div>
-        $<span class="filter-price__to"></span>
-    </div>
-</div>
-</label>
-        </form>
-    </div>
-
-    <div class="filter-brand">
-        <span class="filter__title">BRAND</span>
-        <form class="filter-brand__form" action="#">
-
-            <label class="filter-brand__label">
-                                    <input class="filter-brand__input" type="checkbox">
-
-                                    <p class="filter-brand__item">RFL
-                                        <span class="filter-brand__num">(10)</span>
-        </p>
-        </label>
-
-            <label class="filter-brand__label">
-                                    <input class="filter-brand__input" type="checkbox">
-                                    <p class="filter-brand__item">Brothers
-                                        <span class="filter-brand__num">(21)</span>
-                                    </p>
-                                </label>
-
-            <label class="filter-brand__label">
-                                    <input class="filter-brand__input" type="checkbox">
-                                    <p class="filter-brand__item">Regal
-                                        <span class="filter-brand__num">(3)</span>
-                                    </p>
-                                </label>
-
-            <label class="filter-brand__label">
-                                    <input class="filter-brand__input" type="checkbox">
-                                    <p class="filter-brand__item">Nadia
-                                        <span class="filter-brand__num">(14)</span>
-                                    </p>
-                                </label>
-
-            <label class="filter-brand__label">
-                                    <input class="filter-brand__input" type="checkbox">
-                                    <p class="filter-brand__item">Otobi
-                                        <span class="filter-brand__num">(6)</span>
-                                    </p>
-                                </label>
-
-        </form>
-    </div>
-
-    <div class="filter-recent">
-        <span class="filter__title">RECENT PRODUCTS</span>
-        <div class="filter-recent__products">
-
-            <div class="filter-recent__item">
-                <img class="filter-recent__img" src="images/lamp.jpg" alt="lamp">
-                <div class="filter-recent__about">
-                    <h3 class="filter-recent__text">Pendant lamp</h3>
-                    <div class="star" data-rateyo-rating="5"></div>
-
-                    <span class="filter-recent__price">23$</span>
-                </div>
-            </div>
-
-            <div class="filter-recent__item">
-                <img class="filter-recent__img" src="images/light_mirum-min.png.jpg" alt="lamp">
-                <div class="filter-recent__about">
-                    <h3 class="filter-recent__text">Pendant lamp</h3>
-                    <div class="star" data-rateyo-rating="5"></div>
-
-                    <span class="filter-recent__price">23$</span>
-                </div>
-            </div>
-
-            <div class="filter-recent__item">
-                <img class="filter-recent__img" src="images/ligth_malesuada_min.png.jpg" alt="lamp">
-                <div class="filter-recent__about">
-                    <h3 class="filter-recent__text">Pendant lamp</h3>
-                    <div class="star" data-rateyo-rating="5"></div>
-
-                    <span class="filter-recent__price">23$</span>
-                </div>
-            </div>
-
-        </div>
-    </div>
+    <!-- start filter-recent section -->
+    @@include('filter/filter-recent.html')
+    <!-- end filter-recent section -->
 </div>
