@@ -1,11 +1,11 @@
 .product {
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 150px;
 
     &__items {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 150px;
         column-gap: 30px;
     }
 }

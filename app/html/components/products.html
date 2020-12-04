@@ -3,33 +3,16 @@
 
         <h2 class="title product__title">Products of the week</h2>
 
-        <ul class="filter product__nav">
+        <!-- start filter-mix section -->
+        @@include('filter-mix.html')
+        <!-- end filter-mix section -->
+        <div class="product__items">
+            <!-- start product-cards section -->
+            @@include('product-cards.html')
+            <!-- end product-cards section -->
 
-            <li class="filter__item" data-filter="all">
-                All
-            </li>
+        </div>
 
-            <li class="filter__item" data-filter=".category-a">
-                Furnitures
-            </li>
-
-            <li class="filter__item" data-filter=".category-b">
-                Chairs
-            </li>
-
-            <li class="filter__item" data-filter=".category-c">
-                Lighting
-            </li>
-
-            <li class="filter__item" data-filter=".category-d">
-                Decor
-            </li>
-
-        </ul>
-
-        <!-- start products section -->
-        @@include('product-cards.html')
-        <!-- end products section -->
 
     </div>
 </section>

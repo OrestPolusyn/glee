@@ -8,10 +8,11 @@
     margin-bottom: 16px;
   }
 
-   &__list{
-     padding-left: 30px;
-    
-   }
+  &__list {
+    padding-left: 30px;
+
+  }
+
   &__list,
   &__text {
     list-style: decimal-leading-zero;
@@ -22,8 +23,8 @@
     margin-bottom: 62px;
   }
 
-  &__list-item{
+  &__list-item {
     margin-bottom: 20px;
-        padding-left: 10px;
+    padding-left: 10px;
   }
 }
