@@ -1,0 +1,72 @@
+.design {
+    &__products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 34px 30px;
+        margin-bottom: 120px;
+    }
+}
+
+.design-card {
+    min-height: 246px;
+    max-width: 370px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 38px;
+    background-color: #f8f8f8;
+    overflow: hidden;
+    position: relative;
+
+    &__title {
+        @extend %DMSans-700;
+        font-size: 20px;
+        color: #1a1a1a;
+        line-height: 1.2;
+        max-width: 180px;
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        @extend %DMSans-700;
+        color: #a3bbc8;
+        line-height: 1.2;
+    }
+
+    &__img {
+        position: absolute;
+        left: 100px;
+        bottom: 36px;
+        max-height: 160px;
+
+        &--chair {
+            left: auto;
+            right: 35px;
+        }
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        font-size: 18px;
+        @extend %DMSans-700;
+        opacity: 0;
+        transition: opacity 0.5s;
+        color: #fff;
+
+        &:hover {
+            background-color: rgba(26, 26, 26, 0.7);
+            opacity: 1;
+            transition: opacity 0.5s;
+        }
+    }
+}

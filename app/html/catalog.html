@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glee | Gatalog</title>
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+
+    <!-- start header section -->
+    @@include('components/header.html')
+    <!-- end header section -->
+
+    <main class="main">
+        <!-- start top-block section -->
+        @@include('components/about/top-block.html')
+        <!-- end top-block section -->
+
+        <section class="shop">
+            <div class="wrapper">
+
+                <div class="shop-inner">
+                    <!-- start terms section -->
+                    @@include('components/catalog/filter.html')
+                    <!-- end terms section -->
+                    <!-- start content section -->
+                    @@include('components/catalog/content.html')
+                    <!-- end content section -->
+                </div>
+            </div>
+        </section>
+
+
+        <!-- start partners section -->
+        @@include('components/partners.html')
+        <!-- end partners section -->
+
+    </main>
+    <!-- start footer section -->
+    @@include('components/footer.html')
+    <!-- end footer section -->
+
+    <script src="js/main.min.js "></script>
+</body>
+
+</html>

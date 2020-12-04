@@ -1,4 +1,4 @@
-$(function () {
+$(function() {
 
     $(".star").rateYo({
         starWidth: "17px",
@@ -6,7 +6,7 @@ $(function () {
         ratedFill: "#ffc35b",
         readOnly: true
     });
-    
+
     $('.filter-price__input').ionRangeSlider({
         type: "double",
         min: 0,
@@ -17,11 +17,11 @@ $(function () {
         prettify_enabled: true,
         prettify_separator: '.',
 
-        onChange: function (data) {
+        onChange: function(data) {
             $('.filter-price__from').text(data.from_pretty);
             $('.filter-price__to').text(data.to_pretty);
         },
-        onStart: function (data) {
+        onStart: function(data) {
             $('.filter-price__from').text(data.from_pretty);
             $('.filter-price__to').text(data.to_pretty);
         }
