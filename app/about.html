@@ -103,7 +103,7 @@
     <main class="main">
         <!-- start top-block section -->
         <div class="top-block">
-    <h2 class="top-block__title">About Us</h2>
+    <h1 class=" top-block__title">About Us</h1>
     <div class="breadcrumbs">
         <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
@@ -112,7 +112,7 @@
                 </a>
             </li>
             <li class="breadcrumbs__item">
-                <span class="breadcrumbs__link" href="#">
+                <span class="breadcrumbs__link">
                     About Us
                 </span>
             </li>
@@ -123,43 +123,53 @@
 
         <div class="wrapper">
             <!-- start experience section -->
-            <section class="experience" style="background-image: url(images/man-mac.jpg);">
+            <section class="experience">
 
-    <div class="experience-content">
-        <div class="experience-content__year">
-            <span class="experience-content__num">12</span>
-            <div class="experience-content__descr">
-                <span class="experience-content__span">Years</span>
-                <span class="experience-content__span">Experience</span>
-                <span class="experience-content__span">Working</span>
+    <div class="experience-block" style="background-image: url(images/man-mac.jpg);">
+        <div class="experience-content">
+
+            <div class="experience-content__year">
+                <span class="experience-content__num">12</span>
+                <div class="experience-content__descr">
+                    <span class="experience-content__string">Years</span>
+                    <span class="experience-content__string">Experience</span>
+                    <span class="experience-content__string">Working</span>
+                </div>
             </div>
-        </div>
-        <div class="experience-content__desc">
-            <h2 class="experience-content__title">Mission of our creative house</h2>
-            <p class="experience-content__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                in voluptate velit esse cillum</p>
-        </div>
-        <div class="experience-content__numbers">
-            <div class="experience-content__item experience-content__item--contract">
-                <span class="experience-content__number">
-                    520+
-                </span>
-                <p class="experience-content__name">Projects</p>
+            <div class="experience-content__desc">
+                <h2 class="experience-content__title">Mission of our creative house</h2>
+                <div class="experience-content__block">
+                    <p class="experience-content__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum</p>
+                </div>
             </div>
-            <div class="experience-content__item experience-content__item--speaker">
-                <span class="experience-content__number">
-                    $4M
-                </span>
-                <p class="experience-content__name">Revenue</p>
-            </div>
-            <div class="experience-content__item experience-content__item--medal">
-                <span class="experience-content__number">
-                    250
-                </span>
-                <p class="experience-content__name">Awards</p>
-            </div>
+
+            <ul class="experience-content__numbers">
+                <li class="experience-content__item experience-content__item--contract">
+                    <span class="experience-content__number">
+                        520+
+                    </span>
+                    <p class="experience-content__name">Projects</p>
+                </li>
+                <li class="experience-content__item experience-content__item--speaker">
+                    <span class="experience-content__number">
+                        $4M
+                    </span>
+                    <p class="experience-content__name">Revenue</p>
+                </li>
+                <li class="experience-content__item experience-content__item--medal">
+                    <span class="experience-content__number">
+                        250
+                    </span>
+                    <p class="experience-content__name">Awards</p>
+                </li>
+            </ul>
+
         </div>
     </div>
 </section>
@@ -170,25 +180,21 @@
         <div class="numbers">
     <div class="wrapper">
         <ul class="numbers__list">
-            <li class="numbers__item">
-                <img class="numbers__item-img" src="images/about/icons/graf.svg" alt="Icon">
-                <span class="numbers__item-number">99%</span>
-                <p class="numbers__item-name">Satisﬁed Clients Rate</p>
+            <li class="numbers__item numbers__item--graf">
+                <span class="numbers__number">99%</span>
+                <p class="numbers__name">Satisﬁed Clients Rate</p>
             </li>
-            <li class="numbers__item">
-                <img class="numbers__item-img" src="images/about/icons/truck.svg" alt="Icon">
-                <span class="numbers__item-number">5020+</span>
-                <p class="numbers__item-name">Products Delivered</p>
+            <li class="numbers__item numbers__item--truck">
+                <span class="numbers__number">5020+</span>
+                <p class="numbers__name">Products Delivered</p>
             </li>
-            <li class="numbers__item">
-                <img class="numbers__item-img" src="images/about/icons/call-hour.svg" alt="Icon">
-                <span class="numbers__item-number">23hr</span>
-                <p class="numbers__item-name">Daily Working Time</p>
+            <li class="numbers__item numbers__item--call_hour">
+                <span class="numbers__number">23hr</span>
+                <p class="numbers__name">Daily Working Time</p>
             </li>
-            <li class="numbers__item">
-                <img class="numbers__item-img" src="images/about/icons/medal.svg" alt="Icon">
-                <span class="numbers__item-number">140+</span>
-                <p class="numbers__item-name">Brands in Store</p>
+            <li class="numbers__item numbers__item--medal">
+                <span class="numbers__number">140+</span>
+                <p class="numbers__name">Brands in Store</p>
             </li>
         </ul>
     </div>
@@ -197,17 +203,17 @@
 
         <div class="wrapper">
             <!-- start team section -->
-            <div class="team">
+            <section class="team">
     <div class="team__content">
-        <h2 class="team__content-title">Our Team</h2>
-        <p class="team__content-text">Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusmod tempor
+        <h2 class="team__title">Our Team</h2>
+        <p class="team__text">Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusmod tempor
             inciLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
             exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
 
-        <a href="#" class="team__content-btn">Join With US
-            <svg class="team__content-icon icon">
+        <a href="#" class="team__btn">Join With US
+            <svg class="team__icon icon">
                 <use xlink:href="images/icons/sprite.svg#arrow__team"></use>
             </svg>
         </a>
@@ -311,7 +317,7 @@
             </div>
         </div>
     </div>
-</div>
+</section>
             <!-- end team section -->
         </div>
 
@@ -345,12 +351,12 @@
                     <span class="blog-item__text">
                         <svg class="blog-item__icon icon" viewBox="0 0 448 512">
                             <use xlink:href="images/icons/sprite.svg#calendar__icon"></use>
-                        </svg> 28 JANUARY, 2020
+                        </svg> 28 january, 2020
                     </span>
                     <span class="blog-item__text">
                         <svg class="blog-item__icon icon">
                             <use xlink:href="images/icons/sprite.svg#user__icon"></use>
-                        </svg>BY ADMIN
+                        </svg>by admin
                     </span>
                 </div>
             </article>
@@ -369,12 +375,12 @@
                     <span class="blog-item__text">
                         <svg class="blog-item__icon icon" viewBox="0 0 448 512">
                             <use xlink:href="images/icons/sprite.svg#calendar__icon"></use>
-                        </svg> 28 JANUARY, 2020
+                        </svg> 28 january, 2020
                     </span>
                     <span class="blog-item__text">
                         <svg class="blog-item__icon icon">
                             <use xlink:href="images/icons/sprite.svg#user__icon"></use>
-                        </svg>BY ADMIN
+                        </svg>by admin
                     </span>
                 </div>
             </article>
@@ -391,12 +397,12 @@
                     <span class="blog-item__text">
                         <svg class="blog-item__icon icon" viewBox="0 0 448 512">
                             <use xlink:href="images/icons/sprite.svg#calendar__icon"></use>
-                        </svg> 28 JANUARY, 2020
+                        </svg> 28 january, 2020
                     </span>
                     <span class="blog-item__text">
                         <svg class="blog-item__icon icon">
                             <use xlink:href="images/icons/sprite.svg#user__icon"></use>
-                        </svg>BY ADMIN
+                        </svg>by admin
                     </span>
                 </div>
             </article>
@@ -531,7 +537,7 @@
                 </p>
                 <p class="footer__text ">Subscribe by our newsletter and get update protidin.</p>
                 <form action="# " class="footer__form">
-                    <label>Email address
+                    <label class="footer__input-name">Email address
                         <input type="email" class="footer__input" placeholder="Email address" name="subscribe[email]">
                     </label>
                     <button class="footer__btn ">Subscribe</button>

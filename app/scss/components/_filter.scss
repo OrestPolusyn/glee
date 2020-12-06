@@ -3,16 +3,16 @@
     justify-content: center;
     margin-bottom: 78px;
 
-    &__item,
-    &__link {
+    &__btn {
         border: none;
         background-color: transparent;
         outline: transparent;
         @extend %DMSans-700;
         color: #8b8b8b;
         cursor: pointer;
+    }
 
-        &:not(:last-child),
+    &__item {
         &:not(:last-child) {
             margin-right: 30px;
         }

@@ -19,6 +19,13 @@ $(function () {
         starWidth: "17px",
         normalFill: "#ccccce",
         ratedFill: "#ffc35b",
+        readOnly: true
+    });
+
+    $('.product-card__star').rateYo({
+        starWidth: "17px",
+        normalFill: "#ccccce",
+        ratedFill: "#ffc35b",
         readOnly: true,
         spacing: "13px"
     });
@@ -54,7 +61,7 @@ $(function () {
 
     var mixerDesign = mixitup('.product__items', {
         selectors: {
-            control: '.product__nav .filter__item'
+            control: '.product__nav .filter__btn'
         },
         animation: {
             duration: 100
@@ -63,7 +70,7 @@ $(function () {
 
     var mixerProducts = mixitup('.design__products', {
         selectors: {
-            control: '.design__nav .filter__item'
+            control: '.design__nav .filter__btn'
         },
         animation: {
             duration: 300

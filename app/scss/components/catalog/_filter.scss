@@ -23,10 +23,7 @@
     }
 }
 
-.filter-category,
-.filter-price,
-.filter-brand,
-.filter-recent {
+.filter-category {
     background-color: transparent;
     width: 100%;
     margin-bottom: 60px;
@@ -78,19 +75,12 @@
     }
 }
 
+
 .filter-brand {
+    background-color: transparent;
+    width: 100%;
+    width: 270px;
     margin-bottom: 54px;
-
-    &__item {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-
-        &::after {
-            background-image: none;
-        }
-    }
 
     &__input {
         @extend %checkbox-hidden;
@@ -104,16 +94,61 @@
         }
     }
 
+    &__form {
+        padding-top: 30px;
+    }
+
+    &__label {
+        display: flex;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 13px 14px;
+        align-items: center;
+        background-color: transparent;
+        font-size: 16px;
+        @extend %Rubik-400;
+        color: $text-color;
+        position: relative;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &::after {
+            background-image: none;
+        }
+    }
+
     &__num {
         color: #b3b3b3;
         padding-right: 10px;
     }
 }
 
+
 .filter-price {
     background-color: transparent;
     width: 100%;
     margin-bottom: 82px;
+
+    &__input {
+        @extend %checkbox-hidden;
+
+        &:checked+.filter-category__item {
+            background-color: #edf1f4;
+        }
+    }
+
+    &__form {
+        padding-top: 30px;
+    }
+
+    &__label {
+        display: flex;
+    }
 
     &__numbers {
         display: flex;
@@ -159,9 +194,28 @@
     }
 }
 
+
+
 .filter-recent {
-    &__products {
-        margin-top: 25px;
+    background-color: transparent;
+    width: 100%;
+    margin-bottom: 60px;
+    width: 270px;
+
+    &__input {
+        @extend %checkbox-hidden;
+
+        &:checked+.filter-category__item {
+            background-color: #edf1f4;
+        }
+    }
+
+    &__form {
+        padding-top: 30px;
+    }
+
+    &__label {
+        display: flex;
     }
 
     &__item {
@@ -169,10 +223,18 @@
         padding: 0;
         margin-bottom: 16px;
         position: relative;
+        width: 100%;
+        align-items: center;
+        background-color: transparent;
+        font-size: 16px;
+        @extend %Rubik-400;
+        color: $text-color;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 
-        &::after {
-            background-image: none;
-        }
+    &__products {
+        margin-top: 25px;
     }
 
     &__img {
@@ -185,8 +247,15 @@
         margin-top: 8px;
     }
 
-    &__text,
+
     &__price {
+        font-size: 14px;
+        @extend %Rubik-400;
+        color: #333333;
+        margin: 12px 0;
+    }
+
+    &__text {
         font-size: 14px;
         @extend %Rubik-400;
         color: #333333;

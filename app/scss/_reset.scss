@@ -51,3 +51,9 @@ select {
 a {
     text-decoration: none;
 }
+
+button,
+a,
+input {
+    outline: transparent;
+}

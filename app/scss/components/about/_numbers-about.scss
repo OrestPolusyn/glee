@@ -14,32 +14,57 @@
         text-align: center;
         color: $text-color;
         @extend %DMSans-700;
-    }
-
-    &__item-img {
-        margin: 0 auto;
-        margin-bottom: 16px;
+        padding-top: 80px;
         position: relative;
+
 
         &::before {
             content: "";
-            border-radius: 50%;
-            background-color: #a3bbc8;
+            width: 60px;
+            height: 70px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
             position: absolute;
-            width: 35px;
-            height: 35px;
-            bottom: 0;
+            top: 0;
             right: 0;
+            left: 0;
+            margin: 0 auto;
         }
     }
 
-    &__item-number {
+    &__item--graf {
+        &::before {
+            background-image: url(../../images/about/icons/graf.svg);
+        }
+    }
+
+    &__item--truck {
+        &::before {
+            background-image: url(../../images/about/icons/truck.svg);
+        }
+    }
+
+    &__item--call_hour {
+        &::before {
+            background-image: url(../../images/about/icons/call_hour.svg);
+        }
+    }
+
+    &__item--medal {
+        &::before {
+            background-image: url(../../images/about/icons/medal.svg);
+        }
+    }
+
+    &__number {
         display: block;
         margin-bottom: 11px;
         font-size: 36px;
+
     }
 
-    &__item-name {
+    &__name {
         font-size: 18px;
     }
 }

@@ -1,9 +1,8 @@
 .product__items--list {
   .product-card {
-    width: 100%;
+    max-width: 100%;
     flex-direction: row;
     box-shadow: none;
-    height: 500px;
     padding: 0;
     background-color: #fefefe;
 

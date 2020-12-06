@@ -1,13 +1,17 @@
 .experience {
     display: flex;
     margin-bottom: 120px;
-    background-repeat: no-repeat;
-    background-size: 570px, contain;
-    background-position: center left;
 
     &__img {
         margin-right: 50px;
     }
+}
+
+.experience-block {
+    background-repeat: no-repeat;
+    background-size: 570px, contain;
+    background-position: center left;
+    width: 100%;
 }
 
 .experience-content {
@@ -33,7 +37,7 @@
         padding-bottom: 12px;
     }
 
-    &__span {
+    &__string {
         display: block;
         font-size: 16px;
         @extend %Rubik-400;

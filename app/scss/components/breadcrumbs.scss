@@ -1,0 +1,39 @@
+.breadcrumbs {
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    position: relative;
+
+    &::before {
+      content: "/";
+      position: absolute;
+      font-size: 14px;
+      color: #22293399;
+      line-height: 1.714;
+      left: -12px;
+    }
+
+    &:first-child {
+      &::before {
+        content: "";
+      }
+    }
+  }
+
+  &__item {
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    color: rgba(#232a34, 0.6);
+    line-height: 1.714;
+  }
+}
