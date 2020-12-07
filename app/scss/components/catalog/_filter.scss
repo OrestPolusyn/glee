@@ -29,7 +29,7 @@
     margin-bottom: 60px;
     width: 270px;
 
-    &__input {
+    &__choose {
         @extend %checkbox-hidden;
 
         &:checked+.filter-category__item {
@@ -41,7 +41,7 @@
         padding-top: 30px;
     }
 
-    &__label {
+    &__field {
         display: flex;
     }
 
@@ -82,7 +82,7 @@
     width: 270px;
     margin-bottom: 54px;
 
-    &__input {
+    &__choose {
         @extend %checkbox-hidden;
 
         &:checked+.filter-brand__item {
@@ -98,7 +98,7 @@
         padding-top: 30px;
     }
 
-    &__label {
+    &__field {
         display: flex;
     }
 
@@ -134,7 +134,7 @@
     width: 100%;
     margin-bottom: 82px;
 
-    &__input {
+    &__choose {
         @extend %checkbox-hidden;
 
         &:checked+.filter-category__item {
@@ -146,7 +146,7 @@
         padding-top: 30px;
     }
 
-    &__label {
+    &__field {
         display: flex;
     }
 

@@ -5,6 +5,14 @@
         grid-template-rows: repeat(2, 1fr);
         gap: 34px 30px;
         margin-bottom: 120px;
+        align-self: center;
+
+        @media (max-width:1200px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
     }
 }
 
@@ -27,6 +35,8 @@
         line-height: 1.2;
         max-width: 180px;
         margin-bottom: 10px;
+        z-index: 1;
+
     }
 
     &__subtitle {
@@ -34,13 +44,16 @@
         @extend %DMSans-700;
         color: #a3bbc8;
         line-height: 1.2;
+        z-index: 1;
+
     }
 
     &__img {
         position: absolute;
-        left: 100px;
+        right: -56px;
         bottom: 36px;
         max-height: 160px;
+        z-index: 0;
 
         &--chair {
             left: auto;

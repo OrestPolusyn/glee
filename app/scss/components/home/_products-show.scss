@@ -1,6 +1,13 @@
 .show-product {
     display: flex;
     margin-bottom: 100px;
+    justify-content: space-between;
+    column-gap: 30px;
+
+    @media (max-width:1440px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     &__item {
         background-color: #feefe2;
@@ -8,11 +15,12 @@
         width: 100%;
         display: flex;
         align-items: center;
-        padding-left: 140px;
-        padding-bottom: 80px;
+        padding: 0 3% 5% 8%;
 
         &:first-child {
-            margin-right: 30px;
+            @media (max-width:1440px) {
+                margin-bottom: 120px;
+            }
         }
     }
 
@@ -35,6 +43,15 @@
         line-height: 1.231;
         text-align: left;
         margin-bottom: 10px;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        display: -moz-box;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        line-clamp: 3;
+        box-orient: vertical;
     }
 
     &__text {
@@ -43,6 +60,15 @@
         color: $text-color;
         line-height: 1.875;
         margin-bottom: 30px;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        display: -moz-box;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        line-clamp: 3;
+        box-orient: vertical;
     }
 
     &__btn {

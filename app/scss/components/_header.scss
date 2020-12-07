@@ -113,6 +113,10 @@
     right: 0;
     max-width: 490px;
 
+    @media (max-width:1200px) {
+        position: relative;
+    }
+
     &__list {
         display: flex;
         justify-content: space-between;
@@ -140,6 +144,10 @@
 
         &:not(:last-child) {
             margin-right: 34px;
+
+            @media (max-width:1200px) {
+                margin-right: 24px;
+            }
         }
 
         &:hover {

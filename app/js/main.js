@@ -30,7 +30,7 @@ $(function () {
         spacing: "13px"
     });
 
-    $('.filter-price__input').ionRangeSlider({
+    $('.filter-price__choose').ionRangeSlider({
         type: "double",
         min: 0,
         max: 800,

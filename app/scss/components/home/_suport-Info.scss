@@ -7,7 +7,7 @@
     &__item {
         max-width: 570px;
         width: 100%;
-        padding: 35px 0 37px 220px;
+        padding: 3% 2% 3% 12%;
         position: relative;
 
         &:nth-child(2) {
@@ -36,6 +36,7 @@
         &--card::before {
             background-image: url('/images/icons/credit_card.png');
         }
+
     }
 
     &__title {

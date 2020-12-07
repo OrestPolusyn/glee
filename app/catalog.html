@@ -133,28 +133,28 @@
     <span class="filter__title">CATEGORY</span>
     <form class="filter-category__form" action="#">
 
-        <label class="filter-category__label filter-category__label--active">
-            <input class="filter-category__input" type="checkbox">
+        <label class="filter-category__field filter-category__field--active">
+            <input class="filter-category__choose" type="checkbox">
             <span class="filter-category__item">Chair</span>
         </label>
 
-        <label class="filter-category__label">
-            <input class="filter-category__input" type="checkbox">
+        <label class="filter-category__field">
+            <input class="filter-category__choose" type="checkbox">
             <span class="filter-category__item">Table</span>
         </label>
 
-        <label class="filter-category__label">
-            <input class="filter-category__input" type="checkbox">
+        <label class="filter-category__field">
+            <input class="filter-category__choose" type="checkbox">
             <span class="filter-category__item">Lamp</span>
         </label>
 
-        <label class="filter-category__label">
-            <input class="filter-category__input" type="checkbox">
+        <label class="filter-category__field">
+            <input class="filter-category__choose" type="checkbox">
             <span class="filter-category__item">Watch</span>
         </label>
 
-        <label class="filter-category__label">
-            <input class="filter-category__input" type="checkbox">
+        <label class="filter-category__field">
+            <input class="filter-category__choose" type="checkbox">
             <span class="filter-category__item">Clock</span>
         </label>
 
@@ -168,9 +168,9 @@
         Price
     </span>
     <form class="filter-price__form" action="#">
-        <input class="filter-price__input" type="text" data-type="double" data-min="0" data-max="800" data-from="80"
+        <input class="filter-price__choose" type="text" data-type="double" data-min="0" data-max="800" data-from="80"
             data-to="500">
-        <label class="filter-price__label">
+        <label class="filter-price__field">
             <div class="filter-price__numbers">
                 <div>
                     $<span class="filter-price__from"></span>
@@ -187,43 +187,44 @@
 
     <!-- start filter-brand section -->
     <div class="filter-brand">
+
     <span class="filter__title">BRAND</span>
+    
     <form class="filter-brand__form" action="#">
 
-        <label class="filter-brand__label">
-            <input class="filter-brand__input" type="checkbox">
-
-            <p class="filter-brand__item">RFL
+        <label class="filter-brand__field">
+            <input class="filter-brand__choose" type="checkbox">
+            <span class="filter-brand__item">RFL
                 <span class="filter-brand__num">(10)</span>
-            </p>
+            </span>
         </label>
 
-        <label class="filter-brand__label">
-            <input class="filter-brand__input" type="checkbox">
-            <p class="filter-brand__item">Brothers
+        <label class="filter-brand__field">
+            <input class="filter-brand__choose" type="checkbox">
+            <span class="filter-brand__item">Brothers
                 <span class="filter-brand__num">(21)</span>
-            </p>
+            </span>
         </label>
 
-        <label class="filter-brand__label">
-            <input class="filter-brand__input" type="checkbox">
-            <p class="filter-brand__item">Regal
+        <label class="filter-brand__field">
+            <input class="filter-brand__choose" type="checkbox">
+            <span class="filter-brand__item">Regal
                 <span class="filter-brand__num">(3)</span>
-            </p>
+            </span>
         </label>
 
-        <label class="filter-brand__label">
-            <input class="filter-brand__input" type="checkbox">
-            <p class="filter-brand__item">Nadia
+        <label class="filter-brand__field">
+            <input class="filter-brand__choose" type="checkbox">
+            <span class="filter-brand__item">Nadia
                 <span class="filter-brand__num">(14)</span>
-            </p>
+            </span>
         </label>
 
-        <label class="filter-brand__label">
-            <input class="filter-brand__input" type="checkbox">
-            <p class="filter-brand__item">Otobi
+        <label class="filter-brand__field">
+            <input class="filter-brand__choose" type="checkbox">
+            <span class="filter-brand__item">Otobi
                 <span class="filter-brand__num">(6)</span>
-            </p>
+            </span>
         </label>
 
     </form>
@@ -305,8 +306,10 @@
      <h3 class="product-card__title">Wooden radio</h3>
      <div class=" product-card__star" data-rateyo-rating="4"></div>
      <span class="product-card__price">23<span>$</span></span>
-     <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-       magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+     <div class="product-card__desc">
+       <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+     </div>
      <div class="product-card__content-btns">
        <button class="product-card__link product-card__link--list" type="button">
          <svg class="product-card__icon product-card__icon--cart icon">
@@ -357,10 +360,14 @@
 
   <div class="product-card__content--list">
     <h3 class="product-card__title">Wooden radio</h3>
-     <div class=" product-card__star" data-rateyo-rating="4"></div>
+    <div class=" product-card__star" data-rateyo-rating="4"></div>
     <span class="product-card__price">23<span>$</span></span>
-    <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+    
+    <div class="product-card__desc">
+      <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+    </div>
+
     <div class="product-card__content-btns">
       <button class="product-card__link product-card__link--list" type="button">
         <svg class="product-card__icon product-card__icon--cart icon">
@@ -409,25 +416,29 @@
     <span class="product-card__price"><span>$</span> 29.00</span>
   </div>
 
-     <div class="product-card__content--list">
-       <h3 class="product-card__title">Wooden radio</h3>
-     <div class=" product-card__star" data-rateyo-rating="4"></div>
-       <span class="product-card__price">23<span>$</span></span>
-       <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-       <div class="product-card__content-btns">
-         <button class="product-card__link product-card__link--list" type="button">
-           <svg class="product-card__icon product-card__icon--cart icon">
-             <use xlink:href="images/icons/sprite.svg#cart__icon"></use>
-           </svg>
-         </button>
-         <button class="product-card__link product-card__link--list" type="button">
-           <svg class="product-card__icon product-card__icon--like icon">
-             <use xlink:href="images/icons/sprite.svg#like__icon"></use>
-           </svg>
-         </button>
-       </div>
-     </div>
+  <div class="product-card__content--list">
+    <h3 class="product-card__title">Wooden radio</h3>
+    <div class=" product-card__star" data-rateyo-rating="4"></div>
+    <span class="product-card__price">23<span>$</span></span>
+
+    <div class="product-card__desc">
+      <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+    </div>
+
+    <div class="product-card__content-btns">
+      <button class="product-card__link product-card__link--list" type="button">
+        <svg class="product-card__icon product-card__icon--cart icon">
+          <use xlink:href="images/icons/sprite.svg#cart__icon"></use>
+        </svg>
+      </button>
+      <button class="product-card__link product-card__link--list" type="button">
+        <svg class="product-card__icon product-card__icon--like icon">
+          <use xlink:href="images/icons/sprite.svg#like__icon"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 
   <div class="product-card__overlay">
 
@@ -462,25 +473,29 @@
       <span class="product-card__price"><span>$</span> 29.00</span>
     </div>
 
-   <div class="product-card__content--list">
-     <h3 class="product-card__title">Wooden radio</h3>
-     <div class=" product-card__star" data-rateyo-rating="4"></div>
-     <span class="product-card__price">23<span>$</span></span>
-     <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-       magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-     <div class="product-card__content-btns">
-       <button class="product-card__link product-card__link--list" type="button">
-         <svg class="product-card__icon product-card__icon--cart icon">
-           <use xlink:href="images/icons/sprite.svg#cart__icon"></use>
-         </svg>
-       </button>
-       <button class="product-card__link product-card__link--list" type="button">
-         <svg class="product-card__icon product-card__icon--like icon">
-           <use xlink:href="images/icons/sprite.svg#like__icon"></use>
-         </svg>
-       </button>
-     </div>
-   </div>
+    <div class="product-card__content--list">
+      <h3 class="product-card__title">Wooden radio</h3>
+      <div class=" product-card__star" data-rateyo-rating="4"></div>
+      <span class="product-card__price">23<span>$</span></span>
+      
+      <div class="product-card__desc">
+        <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+      </div>
+  
+      <div class="product-card__content-btns">
+        <button class="product-card__link product-card__link--list" type="button">
+          <svg class="product-card__icon product-card__icon--cart icon">
+            <use xlink:href="images/icons/sprite.svg#cart__icon"></use>
+          </svg>
+        </button>
+        <button class="product-card__link product-card__link--list" type="button">
+          <svg class="product-card__icon product-card__icon--like icon">
+            <use xlink:href="images/icons/sprite.svg#like__icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
 
 
     <div class="product-card__overlay">
@@ -516,26 +531,30 @@
        <span class="product-card__price"><span>$</span> 29.00</span>
      </div>
 
-        <div class="product-card__content--list">
-          <h3 class="product-card__title">Wooden radio</h3>
-     <div class=" product-card__star" data-rateyo-rating="4"></div>
-          <span class="product-card__price">23<span>$</span></span>
-          <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-          <div class="product-card__content-btns">
-            <button class="product-card__link product-card__link--list" type="button">
-              <svg class="product-card__icon product-card__icon--cart icon">
-                <use xlink:href="images/icons/sprite.svg#cart__icon"></use>
-              </svg>
-            </button>
-            <button class="product-card__link product-card__link--list" type="button">
-              <svg class="product-card__icon product-card__icon--like icon">
-                <use xlink:href="images/icons/sprite.svg#like__icon"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
+     <div class="product-card__content--list">
+       <h3 class="product-card__title">Wooden radio</h3>
+       <div class=" product-card__star" data-rateyo-rating="4"></div>
+       <span class="product-card__price">23<span>$</span></span>
+       
+       <div class="product-card__desc">
+         <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+           dolore
+           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+       </div>
+
+       <div class="product-card__content-btns">
+         <button class="product-card__link product-card__link--list" type="button">
+           <svg class="product-card__icon product-card__icon--cart icon">
+             <use xlink:href="images/icons/sprite.svg#cart__icon"></use>
+           </svg>
+         </button>
+         <button class="product-card__link product-card__link--list" type="button">
+           <svg class="product-card__icon product-card__icon--like icon">
+             <use xlink:href="images/icons/sprite.svg#like__icon"></use>
+           </svg>
+         </button>
+       </div>
+     </div>
 
      <div class="product-card__overlay">
 
@@ -570,25 +589,29 @@
       <span class="product-card__price"><span>$</span> 29.00</span>
     </div>
 
-   <div class="product-card__content--list">
-     <h3 class="product-card__title">Wooden radio</h3>
-     <div class=" product-card__star" data-rateyo-rating="4"></div>
-     <span class="product-card__price">23<span>$</span></span>
-     <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-       magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-     <div class="product-card__content-btns">
-       <button class="product-card__link product-card__link--list" type="button">
-         <svg class="product-card__icon product-card__icon--cart icon">
-           <use xlink:href="images/icons/sprite.svg#cart__icon"></use>
-         </svg>
-       </button>
-       <button class="product-card__link product-card__link--list" type="button">
-         <svg class="product-card__icon product-card__icon--like icon">
-           <use xlink:href="images/icons/sprite.svg#like__icon"></use>
-         </svg>
-       </button>
-     </div>
-   </div>
+    <div class="product-card__content--list">
+      <h3 class="product-card__title">Wooden radio</h3>
+      <div class=" product-card__star" data-rateyo-rating="4"></div>
+      <span class="product-card__price">23<span>$</span></span>
+      
+      <div class="product-card__desc">
+        <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+      </div>
+  
+      <div class="product-card__content-btns">
+        <button class="product-card__link product-card__link--list" type="button">
+          <svg class="product-card__icon product-card__icon--cart icon">
+            <use xlink:href="images/icons/sprite.svg#cart__icon"></use>
+          </svg>
+        </button>
+        <button class="product-card__link product-card__link--list" type="button">
+          <svg class="product-card__icon product-card__icon--like icon">
+            <use xlink:href="images/icons/sprite.svg#like__icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
 
 
     <div class="product-card__overlay">
@@ -624,25 +647,29 @@
      <span class="product-card__price"><span>$</span> 29.00</span>
    </div>
 
-      <div class="product-card__content--list">
-        <h3 class="product-card__title">Wooden radio</h3>
+   <div class="product-card__content--list">
+     <h3 class="product-card__title">Wooden radio</h3>
      <div class=" product-card__star" data-rateyo-rating="4"></div>
-        <span class="product-card__price">23<span>$</span></span>
-        <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-        <div class="product-card__content-btns">
-          <button class="product-card__link product-card__link--list" type="button">
-            <svg class="product-card__icon product-card__icon--cart icon">
-              <use xlink:href="images/icons/sprite.svg#cart__icon"></use>
-            </svg>
-          </button>
-          <button class="product-card__link product-card__link--list" type="button">
-            <svg class="product-card__icon product-card__icon--like icon">
-              <use xlink:href="images/icons/sprite.svg#like__icon"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
+     <span class="product-card__price">23<span>$</span></span>
+     
+     <div class="product-card__desc">
+       <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+     </div>
+
+     <div class="product-card__content-btns">
+       <button class="product-card__link product-card__link--list" type="button">
+         <svg class="product-card__icon product-card__icon--cart icon">
+           <use xlink:href="images/icons/sprite.svg#cart__icon"></use>
+         </svg>
+       </button>
+       <button class="product-card__link product-card__link--list" type="button">
+         <svg class="product-card__icon product-card__icon--like icon">
+           <use xlink:href="images/icons/sprite.svg#like__icon"></use>
+         </svg>
+       </button>
+     </div>
+   </div>
 
    <div class="product-card__overlay">
 
@@ -677,26 +704,30 @@
       <span class="product-card__price"><span>$</span> 29.00</span>
     </div>
 
-       <div class="product-card__content--list">
-         <h3 class="product-card__title">Wooden radio</h3>
-     <div class=" product-card__star" data-rateyo-rating="4"></div>
-         <span class="product-card__price">23<span>$</span></span>
-         <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-           dolore
-           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-         <div class="product-card__content-btns">
-           <button class="product-card__link product-card__link--list" type="button">
-             <svg class="product-card__icon product-card__icon--cart icon">
-               <use xlink:href="images/icons/sprite.svg#cart__icon"></use>
-             </svg>
-           </button>
-           <button class="product-card__link product-card__link--list" type="button">
-             <svg class="product-card__icon product-card__icon--like icon">
-               <use xlink:href="images/icons/sprite.svg#like__icon"></use>
-             </svg>
-           </button>
-         </div>
-       </div>
+    <div class="product-card__content--list">
+      <h3 class="product-card__title">Wooden radio</h3>
+      <div class=" product-card__star" data-rateyo-rating="4"></div>
+      <span class="product-card__price">23<span>$</span></span>
+      
+      <div class="product-card__desc">
+        <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+      </div>
+
+      <div class="product-card__content-btns">
+        <button class="product-card__link product-card__link--list" type="button">
+          <svg class="product-card__icon product-card__icon--cart icon">
+            <use xlink:href="images/icons/sprite.svg#cart__icon"></use>
+          </svg>
+        </button>
+        <button class="product-card__link product-card__link--list" type="button">
+          <svg class="product-card__icon product-card__icon--like icon">
+            <use xlink:href="images/icons/sprite.svg#like__icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
 
 
     <div class="product-card__overlay">
@@ -733,26 +764,30 @@
     </div>
 
 
-       <div class="product-card__content--list">
-         <h3 class="product-card__title">Wooden radio</h3>
-     <div class=" product-card__star" data-rateyo-rating="4"></div>
-         <span class="product-card__price">23<span>$</span></span>
-         <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-           dolore
-           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-         <div class="product-card__content-btns">
-           <button class="product-card__link product-card__link--list" type="button">
-             <svg class="product-card__icon product-card__icon--cart icon">
-               <use xlink:href="images/icons/sprite.svg#cart__icon"></use>
-             </svg>
-           </button>
-           <button class="product-card__link product-card__link--list" type="button">
-             <svg class="product-card__icon product-card__icon--like icon">
-               <use xlink:href="images/icons/sprite.svg#like__icon"></use>
-             </svg>
-           </button>
-         </div>
-       </div>
+    <div class="product-card__content--list">
+      <h3 class="product-card__title">Wooden radio</h3>
+      <div class=" product-card__star" data-rateyo-rating="4"></div>
+      <span class="product-card__price">23<span>$</span></span>
+
+      <div class="product-card__desc">
+        <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+      </div>
+      
+      <div class="product-card__content-btns">
+        <button class="product-card__link product-card__link--list" type="button">
+          <svg class="product-card__icon product-card__icon--cart icon">
+            <use xlink:href="images/icons/sprite.svg#cart__icon"></use>
+          </svg>
+        </button>
+        <button class="product-card__link product-card__link--list" type="button">
+          <svg class="product-card__icon product-card__icon--like icon">
+            <use xlink:href="images/icons/sprite.svg#like__icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
 
     <div class="product-card__overlay">
 
@@ -787,25 +822,29 @@
       <span class="product-card__price"><span>$</span> 29.00</span>
     </div>
 
-   <div class="product-card__content--list">
-     <h3 class="product-card__title">Wooden radio</h3>
-     <div class=" product-card__star" data-rateyo-rating="4"></div>
-     <span class="product-card__price">23<span>$</span></span>
-     <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-       magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-     <div class="product-card__content-btns">
-       <button class="product-card__link product-card__link--list" type="button">
-         <svg class="product-card__icon product-card__icon--cart icon">
-           <use xlink:href="images/icons/sprite.svg#cart__icon"></use>
-         </svg>
-       </button>
-       <button class="product-card__link product-card__link--list" type="button">
-         <svg class="product-card__icon product-card__icon--like icon">
-           <use xlink:href="images/icons/sprite.svg#like__icon"></use>
-         </svg>
-       </button>
-     </div>
-   </div>
+    <div class="product-card__content--list">
+      <h3 class="product-card__title">Wooden radio</h3>
+      <div class=" product-card__star" data-rateyo-rating="4"></div>
+      <span class="product-card__price">23<span>$</span></span>
+      
+      <div class="product-card__desc">
+        <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+      </div>
+  
+      <div class="product-card__content-btns">
+        <button class="product-card__link product-card__link--list" type="button">
+          <svg class="product-card__icon product-card__icon--cart icon">
+            <use xlink:href="images/icons/sprite.svg#cart__icon"></use>
+          </svg>
+        </button>
+        <button class="product-card__link product-card__link--list" type="button">
+          <svg class="product-card__icon product-card__icon--like icon">
+            <use xlink:href="images/icons/sprite.svg#like__icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
 
 
     <div class="product-card__overlay">
@@ -841,26 +880,30 @@
        <span class="product-card__price"><span>$</span> 29.00</span>
      </div>
 
-        <div class="product-card__content--list">
-          <h3 class="product-card__title">Wooden radio</h3>
-     <div class=" product-card__star" data-rateyo-rating="4"></div>
-          <span class="product-card__price">23<span>$</span></span>
-          <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-          <div class="product-card__content-btns">
-            <button class="product-card__link product-card__link--list" type="button">
-              <svg class="product-card__icon product-card__icon--cart icon">
-                <use xlink:href="images/icons/sprite.svg#cart__icon"></use>
-              </svg>
-            </button>
-            <button class="product-card__link product-card__link--list" type="button">
-              <svg class="product-card__icon product-card__icon--like icon">
-                <use xlink:href="images/icons/sprite.svg#like__icon"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
+     <div class="product-card__content--list">
+       <h3 class="product-card__title">Wooden radio</h3>
+       <div class=" product-card__star" data-rateyo-rating="4"></div>
+       <span class="product-card__price">23<span>$</span></span>
+       
+       <div class="product-card__desc">
+         <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+           dolore
+           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+       </div>
+
+       <div class="product-card__content-btns">
+         <button class="product-card__link product-card__link--list" type="button">
+           <svg class="product-card__icon product-card__icon--cart icon">
+             <use xlink:href="images/icons/sprite.svg#cart__icon"></use>
+           </svg>
+         </button>
+         <button class="product-card__link product-card__link--list" type="button">
+           <svg class="product-card__icon product-card__icon--like icon">
+             <use xlink:href="images/icons/sprite.svg#like__icon"></use>
+           </svg>
+         </button>
+       </div>
+     </div>
 
      <div class="product-card__overlay">
 
@@ -895,25 +938,29 @@
       <span class="product-card__price"><span>$</span> 29.00</span>
     </div>
 
-   <div class="product-card__content--list">
-     <h3 class="product-card__title">Wooden radio</h3>
-     <div class=" product-card__star" data-rateyo-rating="4"></div>
-     <span class="product-card__price">23<span>$</span></span>
-     <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-       magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-     <div class="product-card__content-btns">
-       <button class="product-card__link product-card__link--list" type="button">
-         <svg class="product-card__icon product-card__icon--cart icon">
-           <use xlink:href="images/icons/sprite.svg#cart__icon"></use>
-         </svg>
-       </button>
-       <button class="product-card__link product-card__link--list" type="button">
-         <svg class="product-card__icon product-card__icon--like icon">
-           <use xlink:href="images/icons/sprite.svg#like__icon"></use>
-         </svg>
-       </button>
-     </div>
-   </div>
+    <div class="product-card__content--list">
+      <h3 class="product-card__title">Wooden radio</h3>
+      <div class=" product-card__star" data-rateyo-rating="4"></div>
+      <span class="product-card__price">23<span>$</span></span>
+      
+      <div class="product-card__desc">
+        <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+      </div>
+  
+      <div class="product-card__content-btns">
+        <button class="product-card__link product-card__link--list" type="button">
+          <svg class="product-card__icon product-card__icon--cart icon">
+            <use xlink:href="images/icons/sprite.svg#cart__icon"></use>
+          </svg>
+        </button>
+        <button class="product-card__link product-card__link--list" type="button">
+          <svg class="product-card__icon product-card__icon--like icon">
+            <use xlink:href="images/icons/sprite.svg#like__icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
 
 
     <div class="product-card__overlay">

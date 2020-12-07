@@ -20,6 +20,15 @@
         color: $text-color;
         line-height: 1.875;
         margin-bottom: 50px;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        display: -moz-box;
+        display: -webkit-box;
+        -webkit-line-clamp: 10;
+        -webkit-box-orient: vertical;
+        line-clamp: 10;
+        box-orient: vertical;
     }
 
     &__members {
@@ -51,9 +60,14 @@
     &__about {
         background-color: #fff;
         max-width: 326px;
-        padding: 25px 24px;
+        padding: 25px 120px 24px 24px;
         transform: translateY(-50px);
         position: relative;
+    }
+
+    &__img{
+        width: 370px;
+        height: 320px;
     }
 
     &__name {
