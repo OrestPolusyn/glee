@@ -4,6 +4,11 @@
         justify-content: space-between;
         padding: 78px 0 54px;
         border-bottom: 1px solid #dae4e9;
+
+        @media (max-width:992px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 
     &__logo {
@@ -46,16 +51,25 @@
 
     &__box {
         padding-top: 16px;
+        margin: 0 auto;
 
         &:first-child {
             max-width: 200px;
             margin-right: 96px;
             padding-top: 0;
+
+            @media (max-width:992px) {
+                margin-right: 0;
+            }
         }
 
         &:nth-child(2),
         &:nth-child(3) {
             margin-right: auto;
+
+            @media (max-width:992px) {
+                margin: 0 20px;
+            }
         }
     }
 
@@ -104,6 +118,12 @@
         display: flex;
         justify-content: space-between;
         padding: 30px 0 40px;
+
+        @media (max-width:992px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     &__copyright {
@@ -112,13 +132,19 @@
         color: $gray;
         line-height: 2.286;
         position: relative;
+        text-align: center;
+
+        @media (max-width:992px) {
+            margin-right: 20px;
+        }
     }
 }
 
 .footer-form {
     max-width: 270px;
     width: 100%;
-    margin-left: 30px;
+    margin: 0 auto;
+
 }
 
 .menu-bottom {

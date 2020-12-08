@@ -3,6 +3,11 @@
     justify-content: center;
     margin-bottom: 78px;
 
+    @media (max-width: 576px) {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
     &__btn {
         border: none;
         background-color: transparent;
@@ -15,7 +20,13 @@
     &__item {
         &:not(:last-child) {
             margin-right: 20px;
+
+            @media (max-width: 576px) {
+                margin-right: 0;
+            }
         }
+
+
     }
 
     .mixitup-control-active {

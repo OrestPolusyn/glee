@@ -2,6 +2,10 @@
     background-color: #fcd7b6;
     padding: 90px 0 44px;
 
+    @media (max-width:576px) {
+        padding: 40px 0;
+    }
+
     &__item {
         max-width: 1360px;
         width: 100%;
@@ -10,10 +14,24 @@
         justify-content: space-between;
         @extend %Rubik-600;
         padding: 0 30px;
+        position: relative;
+
+        @media (max-width:576px) {
+            padding: 0 10px;
+        }
     }
 
     &__box {
         margin-top: 124px;
+
+        @media (max-width:992px) {
+            margin-top: 0;
+            position: absolute;
+           
+        }
+         @media (max-width:576px) {
+             width: 95%;
+         }
     }
 
     &__title {
@@ -28,6 +46,19 @@
         display: -webkit-box;
         -webkit-box-orient: vertical;
         overflow: hidden;
+
+        @media (max-width:1200px) {
+            font-size: 64px;
+        }
+
+        @media (max-width:992px) {
+            font-size: 50px;
+        }
+
+        @media (max-width:576px) {
+            font-size: 38px;
+            margin-bottom: 0;
+        }
     }
 
     &__text {
@@ -42,6 +73,11 @@
         display: -webkit-box;
         -webkit-box-orient: vertical;
         overflow: hidden;
+
+        @media (max-width:576px) {
+            margin-bottom: 40px;
+            max-width: 280px;
+        }
     }
 
     &__btn {
@@ -55,6 +91,17 @@
             margin-left: 60px;
             height: 9px;
             width: 22px;
+
+            @media (max-width:576px) {
+                margin-left: 20px;
+            }
+        }
+
+        @media (max-width:576px) {
+            padding: 10px;
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
         }
     }
 
@@ -63,9 +110,22 @@
             margin-right: 20px;
             max-width: 755px;
             max-height: 640px;
-             @media (max-width:1200px) {
-                  max-width: 600px;
-             }
+            width: 100%;
+
+            @media (max-width:1200px) {
+                max-width: 600px;
+            }
+
+            @media (max-width:992px) {
+                max-width: 500px;
+                margin-top: 120px;
+                margin-left: auto;
+            }
+
+            @media (max-width:576px) {
+                margin-top: 94px;
+                margin-left: 0;
+            }
         }
     }
 

@@ -32,7 +32,7 @@
 
         @media (max-width:1200px) {
             gap: 40px 30px;
-            
+
         }
     }
 }
@@ -69,6 +69,12 @@
         -webkit-box-orient: vertical;
         line-clamp: 3;
         box-orient: vertical;
+
+        &:first-child {
+            @media (max-width:576px) {
+                margin-bottom: 10px;
+            }
+        }
     }
 
     &__title {
@@ -117,6 +123,10 @@
         margin: 12px 27px;
         padding: 16px 0;
         border-top: 1px solid #e0e0e0;
+
+        @media (max-width:576px) {
+            flex-wrap: wrap;
+        }
     }
 
     &__text {
