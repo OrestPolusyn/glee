@@ -8,6 +8,7 @@
         @media (max-width:992px) {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
         }
     }
 
@@ -60,6 +61,7 @@
 
             @media (max-width:992px) {
                 margin-right: 0;
+                margin-left: 0;
             }
         }
 
@@ -78,6 +80,8 @@
         align-items: flex-end;
         margin-left: 6px;
         position: relative;
+
+
     }
 
     &__input-name {
@@ -145,6 +149,9 @@
     width: 100%;
     margin: 0 auto;
 
+    @media (max-width:992px) {
+        margin: 0;
+    }
 }
 
 .menu-bottom {

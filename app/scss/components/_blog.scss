@@ -7,6 +7,7 @@
         @extend %DMSans-700;
         color: #262626;
         line-height: 1.2;
+        min-width: 90px;
     }
 
     &__icon {
@@ -93,6 +94,11 @@
         -webkit-box-orient: vertical;
         line-clamp: 3;
         box-orient: vertical;
+
+        @media (max-width:576px) {
+            padding: 32px 20px 0; 
+
+        }
     }
 
     &__inner {
@@ -126,6 +132,7 @@
 
         @media (max-width:576px) {
             flex-wrap: wrap;
+            margin: 18px;
         }
     }
 

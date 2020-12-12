@@ -2,14 +2,13 @@
     &__products {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: auto;
         gap: 34px 30px;
         margin-bottom: 120px;
         align-self: center;
 
         @media (max-width:1200px) {
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 1fr);
             gap: 20px;
             justify-items: center;
         }
