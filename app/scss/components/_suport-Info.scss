@@ -27,15 +27,15 @@
 
 
     &--hours::before {
-      background-image: url('/images/icons/24_hours.png');
+      background-image: url('../images/icons/24_hours.png');
     }
 
     &--delivery::before {
-      background-image: url('/images/icons/delivery_truck.png');
+      background-image: url('../images/icons/delivery_truck.png');
     }
 
     &--card::before {
-      background-image: url('/images/icons/credit_card.png');
+      background-image: url('../images/icons/credit_card.png');
     }
   }
 

@@ -1,0 +1,33 @@
+.search {
+  position: relative;
+  margin-bottom: 60px;
+
+  &__field {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #dae4e9;
+    height: 42px;
+    padding: 6px 60px 6px 10px;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 42px;
+    border-radius: 5px;
+    border: 1px solid #dae4e9;
+    background-color: #dae4e9;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-image: url('../images/icons/sprite.svg#search__icon');
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+    }
+  }
+}

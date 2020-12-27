@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glee | Blog</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <!-- start header section -->
+  @@include('components/_header.html')
+  <!-- end header section -->
+
+  <main class="main">
+    <!-- start top-block section -->
+    @@include('components/blog-page/_top-block.html')
+    <!-- end top-block section -->
+    <div class="wrapper">
+
+      <div class="blog-page">
+        <div class="blog-page__content">
+          <div class="blog-page__articles">
+            <!-- start articles section -->
+            @@include('components/blog-page/_articles.html')
+            <!-- end articles section -->
+          </div>
+
+          <div class="blog-page__aside">
+            <!-- start_search section -->
+            @@include('components/_search.html')
+            <!-- end search section -->
+            <!-- start category section -->
+            @@include('components/catalog/filter/_filter-category.html')
+            <!-- end category section -->
+            <!-- start _recent section -->
+            @@include('components/blog-page/_recent.html')
+            <!-- end _recent section -->
+
+          </div>
+
+        </div> 
+        <!-- start pagination section -->
+        @@include('components/_pagination.html')
+        <!-- end pagination section -->
+      </div>
+
+    </div>
+
+    <!-- start partners section -->
+    @@include('components/_partners.html')
+    <!-- end partners section -->
+
+  </main>
+  <!-- start footer section -->
+  @@include('components/_footer.html')
+  <!-- end footer section -->
+  <script src="js/main.min.js "></script>
+
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+.blog-details {
+  h3 {
+    font-size: 16px;
+    @extend %Rubik-600;
+    color: $text-color;
+    line-height: 1.875;
+    @extend %text-overflow;
+    margin-bottom: 12px;
+  }
+
+  blockquote {
+    background-color: #edf1f4;
+    border-left: 6px solid #a3bbc8;
+    padding: 14px 34px;
+    font-size: 16px;
+    @extend %Rubik-400;
+    color: $text-color;
+    line-height: 1.875;
+    margin-bottom: 48px;
+
+    span {
+      display: block;
+      padding-left: 45px;
+      position: relative;
+      padding-top: 8px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 4px;
+        background-color: #a3bbc8;
+        left: 3px;
+        top: 55%;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+  }
+
+  &__img {
+    width: 320px;
+    margin-right: 30px;
+  }
+
+  &__text {
+    font-size: 16px;
+    @extend %Rubik-400;
+    color: #565872;
+
+    h4 {
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: $text-color;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  h5 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: $text-color;
+  }
+
+  h5+p {
+    margin-bottom: 58px;
+  }
+
+  .blog-page {
+    &__item {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+
+
+
+.author-box {
+  padding: 25px 0;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__side {
+    display: flex;
+    align-items: center;
+  }
+
+  &__name,
+  &__position {
+    display: block;
+  }
+
+  &__name {
+    margin-bottom: 16px;
+    font-size: 18px;
+    @extend %Rubik-400;
+    color: #333333;
+  }
+
+  &__position {
+    font-size: 16px;
+    @extend %Rubik-400;
+    color: #666666;
+  }
+
+  &__img {
+    width: 76px;
+    height: 76px;
+    margin-right: 30px;
+  }
+
+  &__title {
+    margin-right: 30px;
+    font-size: 16px;
+    @extend %Rubik-400;
+    color: #333333;
+  }
+
+  &__item {
+    margin-right: 10px;
+  }
+
+  &__tags {
+    margin-bottom: 16px;
+  }
+
+  &__link {
+    color: #a1a1a1;
+    fill: #a1a1a1;
+  }
+
+  &__list,
+  &__share {
+    display: flex;
+  }
+
+
+  &__icon {
+    width: 23px;
+  }
+
+  .partners {
+    padding: 55px 0;
+  }
+}

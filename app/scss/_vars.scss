@@ -4,48 +4,71 @@ $white:#fff;
 $priority:#a3bbc8;
 $text-color: #243f4d;
 $top-bg:#edf1f4;
+
 %DMSans-400 {
-    font-family: 'DMSans-Regular', sans-serif;
-    font-weight: 400;
+  font-family: 'DMSans-Regular', sans-serif;
+  font-weight: 400;
 }
 
 %DMSans-600 {
-    font-family: 'DMSans-Medium', sans-serif;
-    font-weight: 600;
+  font-family: 'DMSans-Medium', sans-serif;
+  font-weight: 600;
 }
 
 %DMSans-700 {
-    font-family: 'DMSans-Bold', sans-serif;
-    font-weight: 700;
+  font-family: 'DMSans-Bold', sans-serif;
+  font-weight: 700;
 }
 
 %Rubik-400 {
-    font-family: 'Rubik-Regular', sans-serif;
-    font-weight: 400;
+  font-family: 'Rubik-Regular', sans-serif;
+  font-weight: 400;
 }
 
 %Rubik-600 {
-    font-family: 'Rubik-Medium', sans-serif;
-    font-weight: 600;
+  font-family: 'Rubik-Medium', sans-serif;
+  font-weight: 600;
 }
 
 %Rubik-800 {
-    font-family: 'Rubik-Bold', sans-serif;
-    font-weight: 800;
+  font-family: 'Rubik-Bold', sans-serif;
+  font-weight: 800;
 }
 
 @function max($numbers...) {
-    @return m#{a}x(#{$numbers});
+  @return m#{a}x(#{$numbers});
 }
 
 @function min($numbers...) {
-    @return m#{i}x(#{$numbers});
+  @return m#{i}x(#{$numbers});
 }
 
 %checkbox-hidden {
-    width: 0;
-    height: 0;
-    position: absolute;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
+  width: 0;
+  height: 0;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+%text-overflow {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  box-orient: vertical;
+}
+
+%btn {
+  padding: 18px 34px;
+  text-transform: uppercase;
+  font-size: 14px;
+  @extend %Rubik-400;
+  color: #fff;
+  background-color: #a3bbc8;
+  border: none;
 }

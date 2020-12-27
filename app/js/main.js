@@ -85,3 +85,15 @@ $(function () {
 
 
 });
+
+let map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: {
+      lat: 29.750815,
+      lng: -95.308150
+    },
+    zoom: 13,
+  });
+}
