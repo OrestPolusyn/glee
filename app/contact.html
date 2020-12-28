@@ -136,7 +136,9 @@
   <ul class="contact__list">
     <li class="contact__item">
       <div class="contact__img">
-
+        <svg class="contact__icon icon">
+          <use xlink:href="images/icons/sprite.svg#map_point"></use>
+        </svg>
       </div>
       <span class="contact__name">Address</span>
       <span class="contact__text">2416 Mapleview Drive <br>
@@ -144,7 +146,9 @@
     </li>
     <li class="contact__item">
       <div class="contact__img">
-
+        <svg class="contact__icon icon">
+          <use xlink:href="images/icons/sprite.svg#mail"></use>
+        </svg>
       </div>
       <span class="contact__name">Our Email</span>
       <a class="contact__text" href="mailto:contact@website.com">Main Email : contact@website.com</a>
@@ -152,7 +156,9 @@
     </li>
     <li class="contact__item">
       <div class="contact__img">
-
+        <svg class="contact__icon icon">
+          <use xlink:href="images/icons/sprite.svg#phone"></use>
+        </svg>
       </div>
       <span class="contact__name">Our Phone</span>
       <a class="contact__text" href="tel:0029129102320">Office Telephone : 0029129102320</a>
@@ -164,7 +170,7 @@
       <div class="contact__inner">
 
         <!-- start form section -->
-        <span class="blog-details__form-title">Leave A Comment</span>
+        
 <form class="blog-details__form form" action="#">
   <input class="form__name" type="text" placeholder="Name">
   <input class="form__email" type="email" placeholder="Email">
@@ -172,6 +178,8 @@
   <button class="form__send">send message</button>
 </form>
         <!-- end form section -->
+
+        <iframe src="https://snazzymaps.com/embed/281984" width="500px" height="335px" style="border:none;"></iframe>
       </div>
 
     </div>
@@ -436,7 +444,9 @@
 </footer>
   <!-- end footer section -->
   <script src="js/main.min.js "></script>
-
+  <script defer src="https://maps.googleapis.com/maps/api/js?v=weekly
+        &key=AIzaSyAMgz8BWi7BITXWV9OSNl7kRzR7HO0nPs8&callback=initMap">
+  </script>
 </body>
 
 </html>
