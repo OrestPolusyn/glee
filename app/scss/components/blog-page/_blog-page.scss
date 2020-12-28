@@ -1,91 +1,78 @@
 .blog-page {
-  margin-bottom: 120px;
-
-  &__content {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-  }
-
-  &__articles {
-    max-width: 830px;
-    width: 100%;
-  }
-
-  &__aside {
-    max-width: 270px;
-    width: 100%;
-  }
-
-  &__item {
-    margin-bottom: 50px;
-  }
-
-  &__img {
-    width: 830px;
-    height: 500px;
-    object-fit: cover;
-  }
-
-  &__img-footer {
-    position: absolute;
-    width: 276px;
-    height: 72px;
-    margin-top: -72px;
-    display: flex;
-    background-color: #a3bbc8;
-    justify-content: center;
-    align-items: center;
-
-    span {
-      color: #fff;
+    margin-bottom: 120px;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
     }
-
-    svg {
-      fill: #fff;
+    &__articles {
+        max-width: 830px;
+        width: 100%;
     }
-  }
-
-  h2 {
-    @extend %Rubik-400;
-    padding-top: 38px;
-    margin-bottom: 18px;
-    font-size: 36px;
-    color: #333;
-    @extend %text-overflow;
-  }
-
-  p {
-    font-size: 16px;
-    @extend %Rubik-400;
-    color: $text-color;
-    line-height: 1.875;
-    margin-bottom: 40px;
-  }
-
-  &__link {
-    display: inline-block;
-    padding: 18px;
-    border: 1px solid $priority;
-    color: $priority;
-    @extend %Rubik-600;
-    width: 180px;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    svg {
-      fill: $priority;
-      width: 23px;
-      height: 10px;
+    &__aside {
+        max-width: 270px;
+        width: 100%;
     }
-  }
-
-  .pagination {
-    justify-content: start;
-  }
-  .filter-category{
-    margin-bottom: 40px;
-  }
+    &__item {
+        margin-bottom: 50px;
+    }
+    &__img {
+        width: 830px;
+        height: 500px;
+        object-fit: cover;
+    }
+    &__img-footer {
+        position: absolute;
+        width: 276px;
+        height: 72px;
+        margin-top: -72px;
+        display: flex;
+        background-color: #a3bbc8;
+        justify-content: center;
+        align-items: center;
+        span {
+            color: #fff;
+        }
+        svg {
+            fill: #fff;
+        }
+    }
+    h2 {
+        @extend %Rubik-400;
+        padding-top: 38px;
+        margin-bottom: 18px;
+        font-size: 36px;
+        color: #333;
+        @extend %text-overflow;
+    }
+    p {
+        font-size: 16px;
+        @extend %Rubik-400;
+        color: $text-color;
+        line-height: 1.875;
+        margin-bottom: 40px;
+    }
+    &__link {
+        display: inline-block;
+        padding: 18px;
+        border: 1px solid $priority;
+        color: $priority;
+        @extend %Rubik-600;
+        width: 180px;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        svg {
+            fill: $priority;
+            width: 23px;
+            height: 10px;
+        }
+    }
+    .pagination {
+        justify-content: start;
+    }
+    .filter-category {
+        margin-bottom: 40px;
+    }
 }
