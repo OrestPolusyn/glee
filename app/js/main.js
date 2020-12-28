@@ -13,13 +13,20 @@ $(function () {
         slidesToShow: 2,
         vertical: false
       }
+
     }]
   });
   $('.slider-img__big').slick({
     asNavFor: '.slider-img__thumb',
     arrows: false,
     draggable: false,
-    fade: true
+    fade: true,
+    responsive: [{
+      breakpoint: 576,
+      settings: {
+        fade: true
+      }
+    }]
   });
 
   $('.partners__list').slick({

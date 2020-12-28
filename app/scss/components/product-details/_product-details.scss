@@ -23,9 +23,10 @@
 
   .slick-slide {
     @media (max-width:992px) {
-      max-width: 240px !important;
+      padding: 0 20px;
     }
   }
+
 }
 
 .slider-img {
@@ -35,13 +36,15 @@
     @media (max-width:992px) {
       width: 100%;
     }
+
+    @media (max-width:576px) {
+      display: none;
+    }
   }
 
   &__thumb-item {
     border: 2px solid #f2f2f2;
     margin-bottom: 25px;
-
-
   }
 
   &__thumb-img {
@@ -59,9 +62,8 @@
 
     @media (max-width:992px) {
       width: 310px;
-      margin-bottom: 30px;
       margin-left: 0;
-      margin: 0 auto;
+      margin: 0 auto 30px;
     }
   }
 
