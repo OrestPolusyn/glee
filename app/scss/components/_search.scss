@@ -2,6 +2,13 @@
   position: relative;
   margin-bottom: 60px;
 
+  @media (max-width: 1180px) {
+    max-width: 830px;
+    width: 100%;
+    margin-bottom: 0;
+    margin: 0 auto;
+  }
+
   &__field {
     width: 100%;
     border-radius: 5px;
@@ -30,4 +37,6 @@
       background-size: auto 100%;
     }
   }
+
+
 }

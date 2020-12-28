@@ -1,70 +1,77 @@
 .numbers {
-    background-color: #fcd7b6;
-    padding: 80px 0;
-    margin-bottom: 120px;
+  background-color: #fcd7b6;
+  padding: 80px 0;
+  margin-bottom: 120px;
 
-    &__list {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        padding: 0 50px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    @media (max-width:576px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    text-align: center;
+    color: $text-color;
+    @extend %DMSans-700;
+    padding-top: 80px;
+    position: relative;
+
+    @media (max-width:992px) {
+      width: 100%;
+      padding-bottom: 40px;
     }
 
-    &__item {
-        text-align: center;
-        color: $text-color;
-        @extend %DMSans-700;
-        padding-top: 80px;
-        position: relative;
-
-
-        &::before {
-            content: "";
-            width: 60px;
-            height: 70px;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
-            position: absolute;
-            top: 0;
-            right: 0;
-            left: 0;
-            margin: 0 auto;
-        }
+    &::before {
+      content: "";
+      width: 60px;
+      height: 70px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
     }
+  }
 
-    &__item--graf {
-        &::before {
-            background-image: url(../../images/about/icons/graf.svg);
-        }
+  &__item--graf {
+    &::before {
+      background-image: url(../../images/about/icons/graf.svg);
     }
+  }
 
-    &__item--truck {
-        &::before {
-            background-image: url(../../images/about/icons/truck.svg);
-        }
+  &__item--truck {
+    &::before {
+      background-image: url(../../images/about/icons/truck.svg);
     }
+  }
 
-    &__item--call_hour {
-        &::before {
-            background-image: url(../../images/about/icons/call_hour.svg);
-        }
+  &__item--call_hour {
+    &::before {
+      background-image: url(../../images/about/icons/call_hour.svg);
     }
+  }
 
-    &__item--medal {
-        &::before {
-            background-image: url(../../images/about/icons/medal.svg);
-        }
+  &__item--medal {
+    &::before {
+      background-image: url(../../images/about/icons/medal.svg);
     }
+  }
 
-    &__number {
-        display: block;
-        margin-bottom: 11px;
-        font-size: 36px;
+  &__number {
+    display: block;
+    margin-bottom: 11px;
+    font-size: 36px;
 
-    }
+  }
 
-    &__name {
-        font-size: 18px;
-    }
+  &__name {
+    font-size: 18px;
+  }
 }

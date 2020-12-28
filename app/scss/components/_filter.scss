@@ -1,35 +1,35 @@
 .filter {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 78px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 78px;
 
-    @media (max-width: 576px) {
-        flex-wrap: wrap;
-        gap: 20px;
+  @media (max-width: 576px) {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &__btn {
+    border: none;
+    background-color: transparent;
+    outline: transparent;
+    @extend %DMSans-700;
+    color: #8b8b8b;
+    cursor: pointer;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 20px;
+
+      @media (max-width: 576px) {
+        margin-right: 0;
+      }
     }
 
-    &__btn {
-        border: none;
-        background-color: transparent;
-        outline: transparent;
-        @extend %DMSans-700;
-        color: #8b8b8b;
-        cursor: pointer;
-    }
 
-    &__item {
-        &:not(:last-child) {
-            margin-right: 20px;
+  }
 
-            @media (max-width: 576px) {
-                margin-right: 0;
-            }
-        }
-
-
-    }
-
-    .mixitup-control-active {
-        color: #1a1a1a;
-    }
+  .mixitup-control-active {
+    color: #1a1a1a;
+  }
 }

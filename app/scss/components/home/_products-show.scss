@@ -1,103 +1,103 @@
 .show-product {
+  display: flex;
+  margin-bottom: 100px;
+  justify-content: space-between;
+  column-gap: 30px;
+
+  @media (max-width:1440px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item {
+    background-color: #feefe2;
+    max-width: 870px;
+    width: 100%;
     display: flex;
-    margin-bottom: 100px;
-    justify-content: space-between;
-    column-gap: 30px;
+    align-items: center;
+    padding: 0 3% 5% 8%;
 
-    @media (max-width:1440px) {
-        flex-wrap: wrap;
-        justify-content: center;
+    &:first-child {
+      @media (max-width:1440px) {
+        margin-bottom: 120px;
+      }
     }
 
-    &__item {
-        background-color: #feefe2;
-        max-width: 870px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        padding: 0 3% 5% 8%;
-
-        &:first-child {
-            @media (max-width:1440px) {
-                margin-bottom: 120px;
-            }
-        }
-
-        @media (max-width:576px) {
-            padding: 30px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
+    @media (max-width:576px) {
+      padding: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
+  }
 
-    &__img {
-        margin-top: -100px;
-        max-width: 230px;
+  &__img {
+    margin-top: -100px;
+    max-width: 230px;
 
-        @media (max-width:992px) {
-            max-width: 170px;
-        }
+    @media (max-width:992px) {
+      max-width: 170px;
     }
+  }
 
-    &__content {
-        max-width: 350px;
-        width: 100%;
-        margin-left: 64px;
-        padding-top: 80px;
+  &__content {
+    max-width: 350px;
+    width: 100%;
+    margin-left: 64px;
+    padding-top: 80px;
 
-        @media (max-width:992px) {
-            margin-left: 30px;
-        }
+    @media (max-width:992px) {
+      margin-left: 30px;
     }
+  }
 
-    &__title {
-        font-size: 26px;
-        @extend %DMSans-700;
-        color: $text-color;
-        line-height: 1.231;
-        text-align: left;
-        margin-bottom: 10px;
-        overflow: hidden;
-        -o-text-overflow: ellipsis;
-        text-overflow: ellipsis;
-        display: -moz-box;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        line-clamp: 3;
-        box-orient: vertical;
-    }
+  &__title {
+    font-size: 26px;
+    @extend %DMSans-700;
+    color: $text-color;
+    line-height: 1.231;
+    text-align: left;
+    margin-bottom: 10px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    box-orient: vertical;
+  }
 
-    &__text {
-        font-size: 16px;
-        @extend %Rubik-400;
-        color: $text-color;
-        line-height: 1.875;
-        margin-bottom: 30px;
-        overflow: hidden;
-        -o-text-overflow: ellipsis;
-        text-overflow: ellipsis;
-        display: -moz-box;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        line-clamp: 3;
-        box-orient: vertical;
-    }
+  &__text {
+    font-size: 16px;
+    @extend %Rubik-400;
+    color: $text-color;
+    line-height: 1.875;
+    margin-bottom: 30px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    box-orient: vertical;
+  }
 
-    &__btn {
-        display: inline-block;
-        padding: 18px;
-        border: 1px solid #b3b7b5;
-        color: $default;
-        @extend %Rubik-400;
-        border-radius: 4px;
-    }
+  &__btn {
+    display: inline-block;
+    padding: 18px;
+    border: 1px solid #b3b7b5;
+    color: $default;
+    @extend %Rubik-400;
+    border-radius: 4px;
+  }
 
-    &__icon {
-        width: 24px;
-        margin-left: 38px;
-        fill: #436372;
-        padding-top: 8px;
-    }
+  &__icon {
+    width: 24px;
+    margin-left: 38px;
+    fill: #436372;
+    padding-top: 8px;
+  }
 }

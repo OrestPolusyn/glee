@@ -1,15 +1,14 @@
 .top-block {
-    background-color: $top-bg;
-    text-align: center;
-    padding: 28px 0;
-    @extend %Rubik-400;
-    margin-bottom: 120px;
+  background-color: $top-bg;
+  text-align: center;
+  padding: 28px 0;
+  @extend %Rubik-400;
+  margin-bottom: 120px;
 
-    &__title {
-        font-size: 36px;
-        color: #222933;
-        font-weight: 400;
-        padding-bottom: 11px;
-    }
+  &__title {
+    font-size: 36px;
+    color: #222933;
+    font-weight: 400;
+    padding-bottom: 11px;
+  }
 }
-

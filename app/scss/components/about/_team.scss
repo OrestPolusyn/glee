@@ -1,116 +1,133 @@
 .team {
-    display: flex;
-    margin-bottom: 54px;
+  display: flex;
+  margin-bottom: 54px;
 
-    &__content {
-        max-width: 300px;
-        margin-right: 100px;
+  @media (max-width:992px) {
+    flex-wrap: wrap;
+  }
+
+  &__content {
+    max-width: 300px;
+    margin-right: 100px;
+
+    @media (max-width:992px) {
+      margin-bottom: 40px;
+      margin-right: 0;
+      max-width: 100%;
     }
+  }
 
-    &__title {
-        font-size: 36px;
-        @extend %DMSans-600;
-        color: $text-color;
-        margin-bottom: 16px;
+  &__title {
+    font-size: 36px;
+    @extend %DMSans-600;
+    color: $text-color;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    font-size: 16px;
+    @extend %Rubik-400;
+    color: $text-color;
+    line-height: 1.875;
+    margin-bottom: 50px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    line-clamp: 10;
+    box-orient: vertical;
+  }
+
+  &__members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0 30px;
+
+    @media (max-width:992px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
+  }
 
-    &__text {
-        font-size: 16px;
-        @extend %Rubik-400;
-        color: $text-color;
-        line-height: 1.875;
-        margin-bottom: 50px;
-        overflow: hidden;
-        -o-text-overflow: ellipsis;
-        text-overflow: ellipsis;
-        display: -moz-box;
-        display: -webkit-box;
-        -webkit-line-clamp: 10;
-        -webkit-box-orient: vertical;
-        line-clamp: 10;
-        box-orient: vertical;
+  &__btn {
+    border-radius: 5px;
+    background-color: #a3bbc8;
+    color: #fff;
+    padding: 14px 22px;
+    font-size: 15px;
+    @extend %DMSans-600;
+
+    svg {
+      margin-left: 16px;
+      padding-top: 8px;
     }
-
-    &__members {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-gap: 0 30px;
-    }
-
-    &__btn {
-        border-radius: 5px;
-        background-color: #a3bbc8;
-        color: #fff;
-        padding: 14px 22px;
-        font-size: 15px;
-        @extend %DMSans-600;
-
-        svg {
-            margin-left: 16px;
-            padding-top: 8px;
-        }
-    }
+  }
 }
 
 .team-member {
-    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
-    background-color: #f8f8f8;
+  box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+  background-color: #f8f8f8;
 
-    &__about {
-        background-color: #fff;
-        max-width: 326px;
-        padding: 25px 120px 24px 24px;
-        transform: translateY(-50px);
-        position: relative;
+  &__about {
+    background-color: #fff;
+    max-width: 326px;
+    padding: 25px 120px 24px 24px;
+    transform: translateY(-50px);
+    position: relative;
+  }
+
+  &__img {
+    width: 370px;
+    height: 320px;
+    object-fit: contain;
+  }
+
+  &__name {
+    font-size: 22px;
+    @extend %DMSans-600;
+    color: #436372;
+    margin-bottom: 10px;
+  }
+
+  &__position {
+    font-size: 16px;
+    @extend %Rubik-400;
+    color: rgb(86, 88, 114);
+  }
+
+  &:nth-child(3),
+  &:nth-child(4) {
+    margin-top: -10px;
+  }
+
+  &__socials {
+    display: flex;
+    position: absolute;
+    right: 24px;
+    bottom: 32px;
+  }
+
+  &__item {
+    border-radius: 50%;
+    background-color: rgb(246, 246, 246);
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    &:first-child {
+      margin-right: 7px;
     }
 
-    &__img{
-        width: 370px;
-        height: 320px;
+    svg {
+      fill: #8b8b8b;
+      height: 24px;
+      width: 24px;
+      transform: translate(50%, 50%);
     }
-
-    &__name {
-        font-size: 22px;
-        @extend %DMSans-600;
-        color: #436372;
-        margin-bottom: 10px;
-    }
-
-    &__position {
-        font-size: 16px;
-        @extend %Rubik-400;
-        color: rgb(86, 88, 114);
-    }
-
-    &:nth-child(3),
-    &:nth-child(4) {
-        margin-top: -10px;
-    }
-
-    &__socials {
-        display: flex;
-        position: absolute;
-        right: 24px;
-        bottom: 32px;
-    }
-
-    &__item {
-        border-radius: 50%;
-        background-color: rgb(246, 246, 246);
-        display: block;
-        width: 40px;
-        height: 40px;
-
-        &:first-child {
-            margin-right: 7px;
-        }
-
-        svg {
-            fill: #8b8b8b;
-            height: 24px;
-            width: 24px;
-            transform: translate(50%, 50%);
-        }
-    }
+  }
 }
